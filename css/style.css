@@ -197,10 +197,10 @@ button{
 
 
 .explainer{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top:-2vw;
-    font-size:clamp(5px,4vw,150px);
+    font-size:clamp(20px,3vw,150px);
     display: flex;
     justify-content: center;
 }
