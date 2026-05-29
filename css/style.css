@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Helvetica Ultracondensed;
+    src: url('fonts/HelveticaUltraCompressed.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: Helvetica Ultracondensed;
+    color: rgb(199, 199, 199);
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    
+}
+
+nav {
+    font-size: 3.4vw;
+}
+
+#benthic11{
+    object-fit: cover;
+    position: fixed;
+    right: 0;
+    bottom:0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+img {
+    width:50%;
+    filter: drop-shadow(0px 0px 5px black);
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+}
+
+a:hover {
+    opacity: .75;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
+
+
+header {
+    background-image: url("media/I\ touched\ the\ moss\ single\ cover.jpg");
+    padding: 1.5vw;
+    font-size: 2em;
+    box-shadow: 0 0 10px 1.5px black;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main{
+    flex: 1;
+}
+
+
+
+
+h1 {
+    display: inline-block;
+    margin-top: -2vw;
+    margin-bottom: 2vw;
+    height:auto;
+    font-size: clamp(9vw, 6vw, 6vw);
+    /*-webkit-text-stroke: 2px black;*/
+}
+
+h2 {
+    font-size: clamp(5vw,9vw,8vw);
+    margin-bottom: 2vw;
+}
+
+h3 {
+    font-size: 7vw;
+    margin-bottom: 2vw;
+}
+
+p {
+    font-size: 5vw;
+    line-height: 1.25;
+}
+
+.container {
+    text-align: center;
+    width: 88vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid rgb(8, 8, 8);
+    border-radius: 2vw;
+    background-color: rgba(14, 14, 14, 0.904);
+}
+
+.santacruz {
+    margin-top: -4vw;
+    font-size: clamp(4vw, 4vw, 4vw);
+    margin-bottom: 0vw;
+}
+
+footer {
+    background-image: url("media/I\ touched\ the\ moss\ single\ cover.jpg");
+    font-size: clamp(1.5vw, 3.5vw, 3.5vw);
+    padding: 2vw;
+
+}
+
+a{
+
+    color: rgba(255, 255, 255, 0.767);
+
+}
+
+li a{
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.767);
+    padding: 1vw;
+    margin-bottom: -1vw;
+}
+
+li {
+    display: inline-block;
+    margin-inline: rem;
+    font-size: clamp(3vw, 3.5vw, 3.5vw);
+    
+}
+
+button{
+    font-family: Helvetica Ultracondensed;
+    font-size: 2vw;
+    padding: .1vw;
+    border: 0;
+    stroke-width: 5vw;
+    stroke: black ;
+    background-color: rgba(255, 255, 255, 0.753)
+}
+
+.twocolumns{
+    columns: 2 550px;
+    column-count: 2;
+    column-width: 100%;
+    column-gap: 5rem;
+    column-rule: .2vw solid black;
+}
+
+.threecolumns{
+    columns: 3 250px;
+    column-width: 550px;
+    column-count: 3;
+    column-rule: .2vw solid rgba(0, 0, 0, 0.521);
+}
+
+.videoembed {
+    width:80%;
+    aspect-ratio: 16/9;
+    height: auto;
+    filter: drop-shadow(0px 0px 5px black);
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+}
+
+
+.explainer{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size:3vw;
+}
+
+.statement{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size:5vw;
+}
+
+.albumtitle{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: clamp(5vw, 3.5vw, 3.5vw);
+
+}
+
+.projiframe{
+    width:80%;
+    aspect-ratio: 16/9;
+    height:auto;
+    filter: drop-shadow(0px 0px 5px black);
+    margin-bottom: 1vw;
+}
+
+.nowrap{
+    white-space: nowrap;
+    break-inside: avoid;
+}
+
+section{
+    margin-bottom: 2rem;
+}
+
+.logo{
+    position: absolute;
+    top: 0vw;
+    right: 1vw;
+    width:5vw;
+    z-index: 1000;
+}
