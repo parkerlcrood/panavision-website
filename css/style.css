@@ -70,6 +70,12 @@ body {
 
 main{
     flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    align-content: space-between;
+
 }
 
 
@@ -158,22 +164,30 @@ button{
 }
 
 .twocolumns{
-    columns: 2 550px;
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    columns: 2 30%;
     column-count: 2;
-    column-width: clamp(500px,500px,500px);
-    column-gap: 5rem;
+    column-gap: 0;
     column-rule: .2vw solid black;
+    flex-wrap: wrap;
+
 }
 
 .threecolumns{
-    columns: 3 300px;
-    column-width: clamp(250px,250px,250px);
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    columns: 3 45%;
     column-count: 3;
+    column-gap: 0;
     column-rule: .2vw solid rgba(0, 0, 0, 0.521);
+    flex-wrap: wrap;
 }
 
 .videoembed {
-    width:80%;
+    width:100%;
     aspect-ratio: 16/9;
     height: auto;
     filter: drop-shadow(0px 0px 5px black);
@@ -186,7 +200,9 @@ button{
     margin-left: 10%;
     margin-right: 10%;
     margin-top:-2vw;
-    font-size:clamp(35px,3vw,75px);
+    font-size:clamp(5px,4vw,150px);
+    display: flex;
+    justify-content: center;
 }
 
 .statement{
@@ -196,10 +212,11 @@ button{
 }
 
 .albumtitle{
+    display: flex;
     margin-left: 10%;
     margin-right: 10%;
     font-size: clamp(5vw, 3.5vw, 3.5vw);
-
+    justify-content: center;
 }
 
 .projiframe{
@@ -210,7 +227,9 @@ button{
     margin-bottom: 1vw;
 }
 
+
 .nowrap{
+    width:clamp(250px,40%,500px);
     white-space: nowrap;
     break-inside: avoid;
 }
