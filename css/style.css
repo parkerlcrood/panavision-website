@@ -15,6 +15,7 @@ html {
     font-family: Helvetica Ultracondensed;
     color: rgb(199, 199, 199);
     text-shadow: 0 0 2vw rgb(0, 0, 0);
+    background: black;
     
 }
 
@@ -114,7 +115,7 @@ p {
 
 footer {
     background-image: url("media/I\ touched\ the\ moss\ single\ cover.jpg");
-    font-size: clamp(1.5vw, 3.5vw, 3.5vw);
+    font-size: 3vh;
     padding: 2vw;
 }
 
