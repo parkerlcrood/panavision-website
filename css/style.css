@@ -1,7 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    outline:1px solid red;
 }
 
 @font-face {
@@ -16,6 +15,8 @@ html {
     color: rgb(199, 199, 199);
     text-shadow: 0 0 2vw rgb(0, 0, 0);
     background: black;
+    margin: 0;
+    padding: 0;
     
 }
 
