@@ -33,7 +33,7 @@ nav {
 }
 
 img {
-    width:clamp(25vw,-25vw,-25vw);
+    width:70%;
     filter: drop-shadow(0px 0px 1vw black);
     margin-top: 1vw;
     margin-bottom: 2vw;
@@ -138,28 +138,29 @@ li {
 
 button{
     font-family: Helvetica Ultracondensed;
-    font-size: 2vw;
+    font-size:clamp(25px,2.5vw,37px);
     padding: .1vw;
     border: 0;
     stroke-width: 5vw;
     stroke: black;
     color:black;
     background-color:rgba(255, 255, 255, 0.753);
-    margin-bottom: 2vw;
+    margin-bottom: 4vw;
+    width: inherit;
     
 }
 
 .twocolumns{
     columns: 2 550px;
     column-count: 2;
-    column-width: 100%;
+    column-width: clamp(500px,500px,500px);
     column-gap: 5rem;
     column-rule: .2vw solid black;
 }
 
 .threecolumns{
-    columns: 3 250px;
-    column-width: 350px;
+    columns: 3 300px;
+    column-width: clamp(250px,250px,250px);
     column-count: 3;
     column-rule: .2vw solid rgba(0, 0, 0, 0.521);
 }
@@ -177,7 +178,8 @@ button{
 .explainer{
     margin-left: 10%;
     margin-right: 10%;
-    font-size:3vw;
+    margin-top:-2vw;
+    font-size:clamp(35px,3vw,75px);
 }
 
 .statement{
