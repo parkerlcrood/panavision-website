@@ -35,6 +35,11 @@ nav {
     top: 0;
     overflow: hidden;
     display: block;
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    margin-bottom: env(safe-area-inset-bottom);
+
 }
 
 img {
@@ -197,12 +202,13 @@ button{
 
 
 .explainer{
+    display: flex;
+    justify-content: center;
     margin-left: 5%;
     margin-right: 5%;
     margin-top:-2vw;
-    font-size:clamp(20px,3vw,150px);
-    display: flex;
-    justify-content: center;
+    font-size:clamp(10px,2.5vw,150px);
+
 }
 
 .statement{
