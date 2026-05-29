@@ -121,7 +121,6 @@ p {
 }
 
 footer {
-    position: sticky;
     background-image: url("media/I\ touched\ the\ moss\ single\ cover.jpg");
     font-size: clamp(1.5vw, 3.5vw, 3.5vw);
     padding: 2vw;
