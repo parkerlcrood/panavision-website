@@ -70,6 +70,7 @@ header {
     box-shadow: 0 0 2vw .1vw black;
     display: flex;
     flex-direction: column;
+    align-content: center;
 }
 
 .banner{
@@ -127,10 +128,13 @@ main{
 
 
 h1 {
+    position: sticky;
+    top: 0;
+    left: 0;
     display: inline-block;
     margin-left: 1vw;
-    font-size: clamp(100px, 15vw, 200px);
-    filter: drop-shadow(0 0 .2vw black);
+    font-size: clamp(50px, 15vw, 150px);
+    filter: drop-shadow(0 0 .3vw black);
 }
 
 h2 {
@@ -145,7 +149,7 @@ h3 {
 
 p {
     font-size: clamp(40px, 5vw, 75px);
-    filter: drop-shadow(0 0 .2vw black);
+
 }
 
 .container {
@@ -186,6 +190,7 @@ p {
 }
 
 .santacruz {
+    filter: drop-shadow(0 0 .2vw black);
     margin-left: 1vw;
     margin-bottom: 0vw;
     margin-top: -10%;
