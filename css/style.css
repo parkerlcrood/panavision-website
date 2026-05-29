@@ -50,10 +50,6 @@ header {
     padding: 1.5vw;
     font-size: 2em;
     box-shadow: 0 0 2vw .1vw black;
-    padding-top: env(safe-area-inset-top);
-    padding-bottom: env(safe-area-inset-bottom);
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
 }
 
 body {
@@ -61,14 +57,14 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-}
-
-main{
-    flex: 1;
     padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom);
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
+}
+
+main{
+    flex: 1;
 }
 
 
