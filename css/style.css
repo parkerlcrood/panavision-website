@@ -33,7 +33,7 @@ nav {
 }
 
 img {
-    width:50%;
+    width:clamp(25vw,-25vw,-25vw);
     filter: drop-shadow(0px 0px 1vw black);
     margin-top: 1vw;
     margin-bottom: 2vw;
@@ -144,7 +144,8 @@ button{
     stroke-width: 5vw;
     stroke: black;
     color:black;
-    background-color:rgba(255, 255, 255, 0.753)
+    background-color:rgba(255, 255, 255, 0.753);
+    margin-bottom: 2vw;
     
 }
 
