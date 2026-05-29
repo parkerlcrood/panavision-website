@@ -53,6 +53,7 @@ head{
 
 header {
     background-image: url("media/I\ touched\ the\ moss\ single\ cover.jpg");
+    padding-top: env(safe-area-inset-top);
     padding: 1.5vw;
     font-size: 2em;
     box-shadow: 0 0 2vw .1vw black;
@@ -122,11 +123,7 @@ footer {
     background-image: url("media/I\ touched\ the\ moss\ single\ cover.jpg");
     font-size: clamp(1.5vw, 3.5vw, 3.5vw);
     padding: 2vw;
-    padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom);
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
-
 }
 
 a{
