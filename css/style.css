@@ -128,13 +128,10 @@ main{
 
 
 h1 {
-    position: sticky;
-    top: 0;
-    left: 0;
     display: inline-block;
     margin-left: 1vw;
     font-size: clamp(50px, 15vw, 150px);
-    filter: drop-shadow(0 0 .3vw black);
+    filter: drop-shadow(0 0 1vw black);
 }
 
 h2 {
@@ -190,7 +187,7 @@ p {
 }
 
 .santacruz {
-    filter: drop-shadow(0 0 .2vw black);
+    filter: drop-shadow(0 0 .5vw black);
     margin-left: 1vw;
     margin-bottom: 0vw;
     margin-top: -10%;
