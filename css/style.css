@@ -306,8 +306,8 @@ button{
 
 
 .merchitem{
-    width:clamp(250px,40%,500px);
-    columns: 1 35%;
+    width:clamp(50px,25vw,400px);
+    columns: 1 25%;
     margin-bottom: 3vw;
     white-space: nowrap;
     break-inside: avoid;
