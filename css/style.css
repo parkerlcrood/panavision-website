@@ -172,13 +172,14 @@ p {
     border-radius: 2vw;
     background-color: rgba(14, 14, 14, 0.904);
 }
-
 .contactcontainer .explainer{
-    display: flex;
-    justify-content: center;
     flex-direction: column;
-    margin-top:-2vw;
-    font-size:clamp(10px,2.5vw,150px);
+    margin-top: .5rem;
+}
+
+
+.contactcontainer .explainer p{
+    font-size:clamp(25px,4vw,100px);
 }
 
 .contactcontainer .explainer a:hover {
