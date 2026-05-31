@@ -267,7 +267,7 @@ button{
     font-size:clamp(15px,5vw,150px);
 }
 
-.twocolumns .nowrap .albumtitle{
+.twocolumns .nowrap .albumtitle .distinction{
     white-space: nowrap;
 }
 
