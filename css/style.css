@@ -55,11 +55,9 @@ nav {
     filter: drop-shadow(0px 0px .3vw black);
 }
 
-a:hover{
+a:hover img{
     opacity: .75;
     background-color: rgba(0, 0, 0, 0.363);
-    padding: 0;
-    margin: 0;
 }
 
 
@@ -84,7 +82,7 @@ header {
 
 .linkbanner{
     position: sticky;
-    top: 0vw;
+    top: 0;
     background-color: black;
     width: 100vw;
     z-index: 1;
@@ -146,38 +144,14 @@ p {
     width: 88vw;
     margin-top: 5vw;
     margin-bottom: 5vw;
+    padding-bottom: 5vw;
     margin-left: auto;
     margin-right: auto;
-    border:.25rem solid rgb(8, 8, 8);
+    border:.5vw solid rgb(8, 8, 8);
     border-radius: 2vw;
     background-color: rgba(14, 14, 14, 0.904);
 }
 
-.contactcontainer {
-    text-align: center;
-    width: 88vw;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
-    margin-left: auto;
-    margin-right: auto;
-    border: 3px solid rgb(8, 8, 8);
-    border-radius: 2vw;
-    background-color: rgba(14, 14, 14, 0.904);
-}
-.contactcontainer .explainer{
-    flex-direction: column;
-    margin-top: .5rem;
-}
-
-
-.contactcontainer .explainer p{
-    font-size:clamp(25px,4vw,100px);
-}
-
-.contactcontainer .explainer a:hover {
-    opacity: 75%;
-    background-color: rgba(255, 255, 255, 0);
-}
 
 .santacruz {
     filter: drop-shadow(0 0 .5vw black);
@@ -248,22 +222,30 @@ li {
 
 
 .explainer{
-    display: flex;
-    justify-content: center;
     margin-left: 5%;
     margin-right: 5%;
     margin-top:-2vw;
     font-size:clamp(23px,4vw,150px);
-    padding-bottom: 3vw;
+}
+
+html a:hover {
+    color:rgba(255, 255, 255, 0.589)
+}
+
+.statementcontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.statementcontainer .statement{
+    font-size:clamp(20px,3.5vw,150px);
+
 }
 
 .statement{
-    display: flex;
-    justify-content: center;
     margin-left: 5%;
     margin-right: 5%;
     font-size:clamp(20px,3.5vw,150px);
-    padding-bottom: 3vw;
 }
 
 .twocolumns .nowrap .albumtitle .distinction{
