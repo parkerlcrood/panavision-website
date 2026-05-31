@@ -27,14 +27,11 @@ nav {
     position: fixed;
     z-index: -1;
     width: 100vw;
-    height: 100vh;
+    min-height: 100dvh;
     left: 0;
     top: 0;
     overflow: hidden;
     display: block;
-    padding-bottom: env(safe-area-inset-bottom);
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
 }
 
 .lower{
