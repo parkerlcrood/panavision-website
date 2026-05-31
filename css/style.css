@@ -46,7 +46,7 @@ nav {
 }
 
 .albumcover {
-    width:100%;
+    width:80%;
     filter: drop-shadow(0px 0px .3vw black);
     margin-top: 1vw;
     margin-bottom: 3vw;
@@ -111,8 +111,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items:center;
-    align-content: space-between;
+    align-content: flex-start;
 
 }
 
@@ -127,7 +126,7 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(5vw,9vw,8vw);
+    font-size: clamp(80px, 10vw, 200px);
     margin-bottom: 2vw;
 }
 
@@ -244,7 +243,7 @@ button{
 }
 
 .videoembed {
-    width:100%;
+    width:80%;
     aspect-ratio: 16/9;
     height: auto;
     filter: drop-shadow(0px 0px 5px black);
@@ -275,12 +274,12 @@ button{
 .albumtitle{
     margin-left: 10%;
     margin-right: 10%;
-    font-size: clamp(5vw, 3.5vw, 3.5vw);
+    font-size: clamp(50px, 6vw, 150px);
 }
 
 .projiframe{
     display: block;
-    width: 100%;
+    width: 80%;
     height: clamp(400px,30vw,1000px);
     border: none;
     margin: 0 auto;
@@ -316,7 +315,7 @@ button{
 }
 
 .nowrap{
-    width:clamp(300px,40%,750px);
+    width: min(750px, 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
