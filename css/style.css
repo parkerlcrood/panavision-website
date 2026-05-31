@@ -142,6 +142,8 @@ p {
 
 .container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
     width: 88vw;
     margin-top: 5vw;
     margin-bottom: 5vw;
@@ -209,7 +211,6 @@ li {
     display: inline-block;
     margin-inline: 1rem;
     font-size: clamp(2vw, 3vw, 3.5vw);
-    
 }
 
 button{
@@ -228,10 +229,11 @@ button{
 
 .twocolumns{
     display:flex;
-    justify-content:center;
-    gap:6vw;
+    flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
-
+    text-align: center;
+    border: 2px solid red;
 }
 
 .threecolumns{
@@ -274,13 +276,14 @@ button{
 .albumtitle{
     margin-left: 10%;
     margin-right: 10%;
-    font-size: clamp(50px, 5vw, 150px);
+    font-size: clamp(5px, 5vw, 150px);
+    text-align: center;
 }
 
 .projiframe{
     display: block;
     width: 80%;
-    height: clamp(400px,30vw,1000px);
+    height: clamp(300px,27vw,1000px);
     border: none;
     margin: 0 auto;
     filter: drop-shadow(0px 0px 5px black);
@@ -315,8 +318,8 @@ button{
 }
 
 .nowrap{
-    width: min(750px, 100%);
-    display: flex;
+    width:clamp(50px,40vw,1500px);
+    display: block;
     flex-direction: column;
     align-items: center;
     white-space: nowrap;
