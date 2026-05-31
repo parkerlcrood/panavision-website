@@ -110,12 +110,12 @@ body {
 }
 
 main{
+    flex: 1;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items:flex-start;
-    align-content: auto;
+    align-items:center;
+    align-content: space-between;
 
 }
 
@@ -149,6 +149,8 @@ p {
     width: 88vw;
     margin-top: 5vw;
     margin-bottom: 5vw;
+    margin-left: auto;
+    margin-right: auto;
     border: 3px solid rgb(8, 8, 8);
     border-radius: 2vw;
     background-color: rgba(14, 14, 14, 0.904);
@@ -216,7 +218,7 @@ li {
 
 button{
     font-family: Helvetica Ultracondensed;
-    font-size:clamp(25px,2.5vw,37px);
+    font-size:clamp(20px,2.5vw,150px);
     padding: .1vw;
     border: 0;
     stroke-width: 5vw;
