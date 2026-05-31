@@ -287,7 +287,7 @@ hr {
 
 .albumrow .projiframe{
     width: clamp(300px, 35vw, 80vw);
-    height: clamp(50px, 48vw, 80vw);
+    height: clamp(50px, 49vw, 80vw);
     filter: drop-shadow(0px 0px .3vw black);
     padding-top: 5vw;
     padding-bottom: 5vw;
@@ -352,7 +352,7 @@ hr {
 }
 
 .threecolumns > .nowrap{
-    width:clamp(400px, 33vw, 75%);
+    width:clamp(300px, 43vw, 75%);
     min-width: 33%;
     display: flex;
     justify-content: center;
