@@ -148,7 +148,7 @@ p {
     margin-bottom: 5vw;
     margin-left: auto;
     margin-right: auto;
-    border: 3px solid rgb(8, 8, 8);
+    border:.25rem solid rgb(8, 8, 8);
     border-radius: 2vw;
     background-color: rgba(14, 14, 14, 0.904);
 }
@@ -253,8 +253,8 @@ li {
     margin-left: 5%;
     margin-right: 5%;
     margin-top:-2vw;
-    font-size:clamp(20px,4vw,150px);
-
+    font-size:clamp(23px,4vw,150px);
+    padding-bottom: 3vw;
 }
 
 .statement{
@@ -262,7 +262,8 @@ li {
     justify-content: center;
     margin-left: 5%;
     margin-right: 5%;
-    font-size:clamp(20px,3vw,150px);
+    font-size:clamp(20px,3.5vw,150px);
+    padding-bottom: 3vw;
 }
 
 .twocolumns .nowrap .albumtitle .distinction{
@@ -361,10 +362,6 @@ hr {
     align-items: center;
     flex-wrap: wrap;
     white-space: nowrap;
-}
-
-section{
-    margin-bottom: 2rem;
 }
 
 .logo{
