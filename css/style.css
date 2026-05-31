@@ -144,6 +144,7 @@ p {
     width: 88vw;
     margin-top: 5vw;
     margin-bottom: 5vw;
+    padding-top: 3vw;
     padding-bottom: 5vw;
     margin-left: auto;
     margin-right: auto;
@@ -254,7 +255,7 @@ html a:hover {
 
 hr {
     border:none;
-    height: .25rem;
+    height: .5vw;
     background-color: rgba(0, 0, 0, 0.747);
 }
 
