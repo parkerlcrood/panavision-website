@@ -52,7 +52,15 @@ nav {
     margin-bottom: 3vw;
 }
 
-a:hover {
+.albumrow{
+    display: flex;
+    flex-direction: column;
+    width: clamp(500px 90vw 2000px);
+    white-space: wrap;
+    break-inside: wrap;
+}
+
+a:hover img{
     opacity: .75;
     background-color: rgba(0, 0, 0, 0.363);
 }
@@ -317,7 +325,7 @@ button{
 }
 
 .twocolumns > .nowrap{
-    width:clamp(250px,40vw,800px);
+    width:clamp(200px,38vw,1500px);
     display: block;
     flex-direction: column;
     align-items: center;
@@ -326,7 +334,7 @@ button{
 }
 
 .threecolumns > .nowrap{
-    width:clamp(250px,30vw,800px);
+    width:clamp(150px,25vw,800px);
     display: block;
     flex-direction: column;
     align-items: center;
