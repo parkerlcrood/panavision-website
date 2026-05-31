@@ -49,12 +49,10 @@ nav {
 }
 
 .albumcover {
-    display: flex;
-    justify-content: center;
     width:100%;
     filter: drop-shadow(0px 0px .3vw black);
     margin-top: 1vw;
-    margin-bottom: 2vw;
+    margin-bottom: 3vw;
 }
 
 a:hover {
@@ -92,11 +90,9 @@ header {
 }
 
 .bannerlinks{
-    display: grid;
+    display: flex;
     white-space: nowrap;
-    grid-template-columns:
-    clamp(15vw,15vw,25vw)clamp(15vw,15vw,25vw)clamp(15vw,15vw,25vw)clamp(15vw,15vw,25vw);
-    column-gap: 1vw;
+    gap: 5vw;
     font-size: clamp(3vw, 3vw, 4vw);
     margin-left: 1vw;
     
@@ -118,7 +114,7 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items:top;
+    align-items:flex-start;
     align-content: auto;
 
 }
@@ -153,8 +149,6 @@ p {
     width: 88vw;
     margin-top: 5vw;
     margin-bottom: 5vw;
-    margin-left: auto;
-    margin-right: auto;
     border: 3px solid rgb(8, 8, 8);
     border-radius: 2vw;
     background-color: rgba(14, 14, 14, 0.904);
@@ -191,7 +185,7 @@ p {
     margin-left: 1vw;
     margin-bottom: 0vw;
     margin-top: -10%;
-    font-size: (50px, 10vw, 150px);
+    font-size: clamp(40px, 4vw, 150px);
 }
 
 footer {
@@ -236,12 +230,8 @@ button{
 
 .twocolumns{
     display:flex;
-    justify-content: space-around;
-    text-align: center;
-    columns: 2 30%;
-    column-count: 2;
-    column-gap: 0;
-    column-rule: .2vw solid black;
+    justify-content:center;
+    gap:6vw;
     flex-wrap: wrap;
 
 }
@@ -251,10 +241,6 @@ button{
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
-    columns: 3 35%;
-    column-count: 3;
-    column-gap: 0;
-    column-rule: .2vw solid rgba(0, 0, 0, 0.521);
     flex-wrap: wrap;
 }
 
@@ -274,7 +260,7 @@ button{
     margin-left: 5%;
     margin-right: 5%;
     margin-top:-2vw;
-    font-size:clamp(10px,2.5vw,150px);
+    font-size:clamp(20px,2.5vw,150px);
 
 }
 
@@ -288,20 +274,23 @@ button{
 }
 
 .albumtitle{
-    display: flex;
     margin-left: 10%;
     margin-right: 10%;
     font-size: clamp(5vw, 3.5vw, 3.5vw);
-    justify-content: center;
 }
 
 .projiframe{
-
-    width:100%;
-    justify-self: center;
-    height: clamp(400px,10vw,500px);
+    display: block;
+    width: 100%;
+    height: clamp(400px,30vw,1000px);
+    border: none;
+    margin: 0 auto;
     filter: drop-shadow(0px 0px 5px black);
     margin-bottom: 1vw;
+}
+
+.nowrap > div{
+    width: 100%;
 }
 
 
@@ -328,7 +317,10 @@ button{
 }
 
 .nowrap{
-    width:clamp(250px,40%,500px);
+    width:clamp(300px,40%,750px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     white-space: nowrap;
     break-inside: avoid;
 }
