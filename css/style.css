@@ -274,14 +274,14 @@ button{
 }
 
 .albumrow .projiframe{
-    width: clamp(350px, 40vw, 80vw);
+    width: clamp(250px, 35vw, 80vw);
     height: clamp(400px, 40vw, 100vw);
     filter: drop-shadow(0px 0px .3vw black);
     margin-bottom: 5vw;
 }
 
 .albumrow .albumcover {
-    width: clamp(300px, 40vw, 80vw);
+    width: clamp(250px, 40vw, 80vw);
     margin-bottom: 5vw;
 }
 
@@ -324,13 +324,14 @@ button{
     min-height: 250px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 2vw;
 }
 
 .threecolumns > .nowrap{
-    width:clamp(350px, 33vw, 75%);
+    width:clamp(500px, 33vw, 75%);
     min-width: 33%;
     display: flex;
     justify-content: center;
