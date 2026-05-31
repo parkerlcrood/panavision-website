@@ -46,23 +46,24 @@ nav {
 }
 
 .albumcover {
-    width:80%;
+    display: inline-block;
+    width:clamp(50%, 50vw, 75%);
+    aspect-ratio: 1/1;
+    height: auto;
     filter: drop-shadow(0px 0px .3vw black);
-    margin-top: 1vw;
-    margin-bottom: 3vw;
 }
 
 .albumrow{
     display: flex;
     flex-direction: column;
-    width: clamp(500px 90vw 2000px);
-    white-space: wrap;
-    break-inside: wrap;
+    height: clamp(750px 90vw 2000px);
 }
 
 a:hover img{
     opacity: .75;
     background-color: rgba(0, 0, 0, 0.363);
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -238,9 +239,7 @@ button{
 .twocolumns{
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
     flex-wrap: wrap;
-    text-align: center;
 }
 
 .threecolumns{
@@ -284,17 +283,13 @@ button{
     margin-left: 10%;
     margin-right: 10%;
     font-size: clamp(5px, 5vw, 150px);
-    text-align: center;
 }
 
 .projiframe{
-    display: block;
-    width: clamp(70%,80%,90%);
-    height: clamp(350px,15vw,500px);
-    border: none;
-    margin: 0 auto;
-    filter: drop-shadow(0px 0px 5px black);
-    margin-bottom: 1vw;
+    display: inline-block;
+    width:clamp(30%, 50vw, 75%);
+    height:clamp(50%, 50vw, 100%);
+    filter: drop-shadow(0px 0px .3vw black);
 }
 
 .nowrap > div{
@@ -325,12 +320,14 @@ button{
 }
 
 .twocolumns > .nowrap{
-    width:clamp(200px,38vw,1500px);
-    display: block;
+    width:clamp(40%,80vw,3200px);
+    height:clamp(200px,50vw,1500px);
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    white-space: nowrap;
-    break-inside: avoid;
+}
+
+.twocolumns > .nowrap > .albumrow{
+    flex-direction: row;
 }
 
 .threecolumns > .nowrap{
