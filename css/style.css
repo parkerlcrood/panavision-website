@@ -274,7 +274,7 @@ button{
 .albumtitle{
     margin-left: 10%;
     margin-right: 10%;
-    font-size: clamp(50px, 6vw, 150px);
+    font-size: clamp(30px, 5.5vw, 150px);
 }
 
 .projiframe{
