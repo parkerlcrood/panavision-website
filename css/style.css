@@ -282,7 +282,7 @@ button{
 .projiframe{
     display: block;
     width: clamp(70%,80%,90%);
-    height: clamp(500px,25vw,1000px);
+    height: clamp(350px,15vw,500px);
     border: none;
     margin: 0 auto;
     filter: drop-shadow(0px 0px 5px black);
@@ -316,8 +316,8 @@ button{
 
 }
 
-.nowrap{
-    width:clamp(400px,40vw,1500px);
+.twocolumns > .nowrap{
+    width:clamp(250px,40vw,800px);
     display: block;
     flex-direction: column;
     align-items: center;
@@ -326,7 +326,7 @@ button{
 }
 
 .threecolumns > .nowrap{
-    width:clamp(350px,27vw,800px);
+    width:clamp(250px,30vw,800px);
     display: block;
     flex-direction: column;
     align-items: center;
