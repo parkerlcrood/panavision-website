@@ -267,6 +267,11 @@ button{
     font-size:clamp(15px,5vw,150px);
 }
 
+.twocolumns .nowrap .albumtitle{
+    white-space: nowrap;
+}
+
+
 .albumtitle{
     margin-left: 10%;
     margin-right: 10%;
@@ -274,7 +279,7 @@ button{
 }
 
 .albumrow .projiframe{
-    width: clamp(250px, 35vw, 80vw);
+    width: clamp(275px, 35vw, 80vw);
     height: clamp(400px, 40vw, 100vw);
     filter: drop-shadow(0px 0px .3vw black);
     margin-bottom: 5vw;
