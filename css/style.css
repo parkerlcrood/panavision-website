@@ -289,14 +289,14 @@ html {
 }
 
 .albumrow .projiframe{
-    width: clamp(275px, 25vw, 80vw);
-    height: clamp(50px, 29vw, 950px);
+    width: clamp(275px, 35vw, 80vw);
+    height: clamp(50px, 41vw, 950px);
     filter: drop-shadow(var(--PHOTO-SHADOW));
     margin-top: 3vw;
 }
 
 .albumrow .albumcover {
-    width: clamp(225px, 25vw, 80vw);
+    width: clamp(225px, 41vw, 80vw);
     box-shadow: var(--PHOTO-SHADOW);
 }
 
