@@ -38,12 +38,12 @@ html {
     justify-content: center;
 }
 
-.twocolumns > .nowrap > .albumrow{
+.albumrow{
     width: 100%;
     min-height: 250px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 2vw;
@@ -69,9 +69,15 @@ html {
 
 :root{
     /* Colors */
-    --TEXT-COLOR: rgba(255, 255, 255, 0.753);
+    --TEXT-COLOR: rgb(187, 187, 187);
     --TEXT-HOVER-COLOR: rgba(168, 168, 168, 0.822);
     --CONTAINER-COLOR:  rgba(14, 14, 14, 0.904);
+
+    /* Shadow */
+    --TEXT-SHADOW: 0rem 0rem 0.055em rgb(0, 0, 0);
+    --S-TEXT-SHADOW: 0rem 0rem 0.125em rgb(0, 0, 0);
+    --BANNER-SHADOW: 0rem .5rem 1vw rgb(0, 0, 0);
+    --PHOTO-SHADOW: 0rem 0vw .5vw rgb(0, 0, 0);
 }
 
 
@@ -83,9 +89,9 @@ html {
     top: 0;
     left: 0;
     background-color: black;
-    width: 100vw;
+    width: 100%;
+    box-shadow: var(--BANNER-SHADOW);
     z-index: 1;
-    filter:drop-shadow(5px 5px 10px black);
 }
 
 .container {
@@ -100,7 +106,6 @@ html {
     border:.5vw solid rgb(8, 8, 8);
     border-radius: 1vw;
     background-color: var(--CONTAINER-COLOR);
-    filter: drop-shadow(0px 0px 5vw black);
     padding-bottom: 3vw;
 }
 
@@ -118,14 +123,14 @@ html {
     background-color: rgba(0, 0, 0);
     background-image: url("media/I\ touched\ the\ moss\ single\ cover.jpg");
     background-size: cover;
-    width: 100vw;
+    width: 100%;
 }
 
 .lower{
-    filter:drop-shadow(5px 5px 10px black);
     font-size: clamp(20px, 4vw, 80px);
     color: var(--TEXT-COLOR);
     display: flex;
+    text-shadow: var(--S-TEXT-SHADOW);
     gap: 5vw;
     margin-left: .2rem;
 }
@@ -135,9 +140,7 @@ html {
     white-space: nowrap;
     gap: 5vw;
     font-size: clamp(25px, 3vw, 100px);
-    color: var(--TEXT-COLOR);
-    margin-left: 1vw;
-    
+    margin-left: 1vw; 
 }
 
 .twocolumns{
@@ -170,6 +173,7 @@ html {
 /* Flexbox Elements */
 
 .merchitem{
+    box-shadow: var(--S-TEXT-SHADOW);
     display: flex;
     flex-direction: column;
     width: clamp(275px, 30vw, 400px);
@@ -182,8 +186,8 @@ html {
     object-fit: cover;
     position: fixed;
     z-index: -1;
-    width: 100vw;
-    min-height: 100dvh;
+    width: 100%;
+    min-height: 100%;
     left: 0;
     top: 0;
     overflow: hidden;
@@ -193,7 +197,6 @@ html {
 .albumcover {
     aspect-ratio: 1/1;
     height: auto;
-    filter: drop-shadow(0px 0px .3vw black);
 }
 
 .explainer{
@@ -202,15 +205,16 @@ html {
     margin-bottom: 3vw;
     font-size:clamp(25px,4vw,150px);
     color: var(--TEXT-COLOR);
+    text-shadow: var(--S-TEXT-SHADOW);
 }
 
 .videoembed {
     width:80%;
     aspect-ratio: 16/9;
     height: auto;
-    filter: drop-shadow(0px 0px 5px black);
     margin-top: 2vw;
     margin-bottom: 4vw;
+    filter: drop-shadow(var(--PHOTO-SHADOW));
 }
 
 .statementcontainer{
@@ -233,23 +237,23 @@ html {
 /* Element Elements */
 
 .santacruz {
-    text-shadow: 1px 1px 5px black;
     margin-left: 1vw;
     margin-bottom: 0vw;
     margin-top: -10%;
     font-size: clamp(27px, 3.5vw, 150px);
     color: var(--TEXT-COLOR);
+    text-shadow: var(--S-TEXT-SHADOW);
 }
 
 .merchitem button{
     font-family: Helvetica Ultracondensed;
     font-size:clamp(35px,3vw,150px);
-    color: var(--TEXT-COLOR);
     padding: .5vw;
     border: 0;
     stroke-width: 5vw;
     stroke: black;
     color:black;
+    box-shadow: var(--S-TEXT-SHADOW);
     background-color:var(--TEXT-COLOR);
     margin-bottom: 4vw;
 }
@@ -260,7 +264,6 @@ html {
 
 .merchphoto {
     width:80%;
-    filter: drop-shadow(0px 0px .1vw black);
     margin-top: 2vw;
     margin-bottom: 2.5vw;
 }
@@ -268,6 +271,7 @@ html {
 .statementcontainer .statement{
     font-size:clamp(25px,4vw,150px);
     color: var(--TEXT-COLOR);
+    text-shadow: var(--S-TEXT-SHADOW);
 
 }
 
@@ -281,19 +285,19 @@ html {
     margin-top: 3vw;
     font-size: clamp(35px, 7.5vw, 150px);
     color: var(--TEXT-COLOR);
-    filter: drop-shadow(0px 0px 15px black);
+    text-shadow: var(--TEXT-SHADOW);
 }
 
 .albumrow .projiframe{
-    width: clamp(300px, 35vw, 80vw);
-    height: clamp(50px, 51vw, 80vw);
-    filter: drop-shadow(0px 0px .3vw black);
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    width: clamp(275px, 25vw, 80vw);
+    height: clamp(50px, 29vw, 950px);
+    filter: drop-shadow(var(--PHOTO-SHADOW));
+    margin-top: 3vw;
 }
 
 .albumrow .albumcover {
-    width: clamp(225px, 30vw, 80vw);
+    width: clamp(225px, 25vw, 80vw);
+    box-shadow: var(--PHOTO-SHADOW);
 }
 
 .nowrap > div{
@@ -309,6 +313,7 @@ html {
     margin-bottom: 2vw;
     font-size:clamp(25px,2.5vw,150px);
     color: var(--TEXT-COLOR);
+    text-shadow: var(--S-TEXT-SHADOW);
 }
 
 .statement{
@@ -316,6 +321,20 @@ html {
     padding-right: 3vw;
     font-size:clamp(17px,3vw,150px);
     color: var(--TEXT-COLOR);
+}
+
+.banner h1 {
+    display: inline-block;
+    margin-left: 1vw;
+    font-size: clamp(50px, 15vw, 150px);
+    color: var(--TEXT-COLOR);
+    text-shadow: var(--TEXT-SHADOW);
+}
+
+.container h2 {
+    font-size: clamp(40px, 15vw, 200px);
+    color: var(--TEXT-COLOR);
+    text-shadow: var(--TEXT-SHADOW);
 }
 
 /* End Element Elements */
@@ -327,19 +346,6 @@ html {
 a:hover img{
     opacity: .75;
     background-color: rgba(0, 0, 0, 0.363);
-}
-
-.banner h1 {
-    display: inline-block;
-    margin-left: 1vw;
-    font-size: clamp(50px, 15vw, 150px);
-    text-shadow: 1px 1px 5px black;
-    color: var(--TEXT-COLOR);
-}
-
-.container h2 {
-    font-size: clamp(40px, 15vw, 200px);
-    color: var(--TEXT-COLOR);
 }
 
 h3 {
@@ -371,7 +377,6 @@ footer {
     background-image: url("media/I\ touched\ the\ moss\ single\ cover.jpg");
     width: 100%;
     background-size: cover;
-    filter:drop-shadow(0px 0px 2px black);
     padding: 2vw;
 
 }
