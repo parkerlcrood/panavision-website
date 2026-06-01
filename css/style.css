@@ -278,6 +278,7 @@ html {
 .albumtitle{
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 3vw;
     font-size: clamp(35px, 7.5vw, 150px);
     color: var(--TEXT-COLOR);
     filter: drop-shadow(0px 0px 15px black);
@@ -328,7 +329,7 @@ a:hover img{
     background-color: rgba(0, 0, 0, 0.363);
 }
 
-h1 {
+.banner h1 {
     display: inline-block;
     margin-left: 1vw;
     font-size: clamp(50px, 15vw, 150px);
@@ -336,18 +337,19 @@ h1 {
     color: var(--TEXT-COLOR);
 }
 
-h2 {
-    font-size: clamp(40px, 9vw, 200px);
-    margin-bottom: 3vw;
+.container h2 {
+    font-size: clamp(40px, 15vw, 200px);
     color: var(--TEXT-COLOR);
 }
 
 h3 {
     font-size: clamp(25px, 10vw, 200px);
+    color: var(--TEXT-COLOR);
 }
 
 p {
     font-size: clamp(25px, 5vw, 75px);
+    color: var(--TEXT-COLOR);
 }
 
 a{
