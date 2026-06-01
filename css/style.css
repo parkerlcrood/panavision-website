@@ -1,3 +1,5 @@
+/* Reset */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,304 +20,17 @@ html {
     scroll-behavior: smooth;
 }
 
-nav {
-    font-size: 3.4vw;
+/* End Reset */
+
+
+
+/* Utility Classes*/
+
+.offscreen {
+    position:absolute;
+    left:-100000vw;
 }
 
-#benthic11{
-    object-fit: cover;
-    position: fixed;
-    z-index: -1;
-    width: 100vw;
-    min-height: 100dvh;
-    left: 0;
-    top: 0;
-    overflow: hidden;
-    display: block;
-}
-
-.lower{
-    filter: drop-shadow(0 0 .2vw black);
-    font-size: clamp(25px, 4vw, 80px);
-    display: flex;
-    gap: 5vw;
-    margin-left: .2rem;
-}
-
-.merchphoto {
-    width:70%;
-    filter: drop-shadow(0px 0px .1vw black);
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-}
-
-.albumcover {
-    aspect-ratio: 1/1;
-    height: auto;
-    filter: drop-shadow(0px 0px .3vw black);
-}
-
-a:hover img{
-    opacity: .75;
-    background-color: rgba(0, 0, 0, 0.363);
-}
-
-
-header {
-    background-image: url("media/I\ touched\ the\ moss\ single\ cover.jpg");
-    font-size: 2em;
-    width: 100vw;
-    box-shadow: 0 0 2vw .1vw black;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-
-.banner{
-    display: flex;
-    flex-direction: row;
-    position: sticky;
-    top: 0;
-    background-image: url("media/I\ touched\ the\ moss\ single\ cover.jpg");
-    width: 100vw;
-}
-
-.linkbanner{
-    position: sticky;
-    top: 0;
-    background-color: black;
-    width: 100vw;
-    z-index: 1;
-}
-
-.bannerlinks{
-    display: flex;
-    white-space: nowrap;
-    gap: 5vw;
-    font-size: clamp(25px, 3vw, 100px);
-    margin-left: 1vw;
-    
-}
-
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-main{
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: flex-start;
-
-}
-
-
-
-
-h1 {
-    display: inline-block;
-    margin-left: 1vw;
-    font-size: clamp(50px, 15vw, 150px);
-    filter: drop-shadow(0 0 1vw black);
-}
-
-h2 {
-    font-size: clamp(50px, 7vw, 200px);
-    margin-bottom: 2vw;
-}
-
-h3 {
-    font-size: clamp(25px, 10vw, 200px);
-}
-
-p {
-    font-size: clamp(25px, 5vw, 75px);
-
-}
-
-.container {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 88vw;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
-    padding-top: 3vw;
-    padding-bottom: 5vw;
-    margin-left: auto;
-    margin-right: auto;
-    border:.5vw solid rgb(8, 8, 8);
-    border-radius: 2vw;
-    background-color: rgba(14, 14, 14, 0.904);
-}
-
-
-.santacruz {
-    filter: drop-shadow(0 0 .5vw black);
-    margin-left: 1vw;
-    margin-bottom: 0vw;
-    margin-top: -10%;
-    font-size: clamp(27px, 3.5vw, 150px);
-}
-
-footer {
-    background-image: url("media/I\ touched\ the\ moss\ single\ cover.jpg");
-    width: 100%;
-}
-
-a{
-
-    color: rgba(255, 255, 255, 0.767);
-
-}
-
-li a{
-    display: inline-block;
-    color: rgba(255, 255, 255, 0.767);
-}
-
-li {
-    display: inline-block;
-    margin-inline: 1rem;
-    font-size: clamp(2vw, 3vw, 3.5vw);
-}
-
-.merchitem button{
-    font-family: Helvetica Ultracondensed;
-    font-size:clamp(20px,2.5vw,150px);
-    padding: .1vw;
-    border: 0;
-    stroke-width: 5vw;
-    stroke: black;
-    color:black;
-    background-color:rgba(255, 255, 255, 0.753);
-    margin-bottom: 4vw;
-    width: inherit;
-    
-}
-
-.twocolumns{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.threecolumns{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-.videoembed {
-    width:80%;
-    aspect-ratio: 16/9;
-    height: auto;
-    filter: drop-shadow(0px 0px 5px black);
-    margin-top: 2vw;
-    margin-bottom: 4vw;
-}
-
-
-.explainer{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top:-2vw;
-    font-size:clamp(23px,4vw,150px);
-}
-
-html a:hover {
-    color:rgba(255, 255, 255, 0.589)
-}
-
-.statementcontainer{
-    display: flex;
-    flex-direction: column;
-}
-
-.statementcontainer .statement{
-    font-size:clamp(20px,3.5vw,150px);
-
-}
-
-.statement{
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size:clamp(20px,3.5vw,150px);
-}
-
-.twocolumns .nowrap .albumtitle .distinction{
-    white-space: nowrap;
-}
-
-hr {
-    border:none;
-    height: .5vw;
-    background-color: rgba(0, 0, 0, 0.747);
-}
-
-
-.albumtitle{
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: clamp(35px, 6vw, 150px);
-    filter: drop-shadow(0px 0px .3vw black);
-    margin-top: 3vw;
-    margin-bottom: 2vw;
-}
-
-.albumrow .projiframe{
-    width: clamp(300px, 35vw, 80vw);
-    height: clamp(50px, 51vw, 80vw);
-    filter: drop-shadow(0px 0px .3vw black);
-    padding-top: 5vw;
-    padding-bottom: 5vw;
-}
-
-.albumrow .albumcover {
-    width: clamp(225px, 30vw, 80vw);
-}
-
-.nowrap > div{
-    width: 100%;
-}
-
-
-.merchcolumns{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
-}
-
-.merchitem{
-    width:clamp(150px, 25vw, 1500px);
-    aspect-ratio: 1/1;
-    height:auto;
-    display: flex;
-    flex-direction: column;
-    border: .2vw solid black;
-    border-radius: .5vw;
-    background-color: rgb(19, 19, 19);
-}
-
-.merchtext{
-    display: flex;
-    justify-content: center;
-    white-space: wrap;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top:-2vw;
-    font-size:clamp(15px,2.5vw,150px);
-}
 
 .twocolumns > .nowrap{
     width:100%;
@@ -347,6 +62,154 @@ hr {
     white-space: nowrap;
 }
 
+/* End Utility Classes*/
+
+
+
+/* Utility Containers */
+
+.linkbanner{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100vw;
+    z-index: 1;
+    filter:drop-shadow(5px 5px 10px black);
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 88vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    border:.5vw solid rgb(8, 8, 8);
+    border-radius: 1vw;
+    background-color: rgba(14, 14, 14, 0.904);
+    filter: drop-shadow(0px 0px 5vw black);
+    padding-bottom: 3vw;
+}
+
+/* End Utility Containers */
+
+
+
+/* Flexboxes */
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0);
+    background-image: url("media/I\ touched\ the\ moss\ single\ cover.jpg");
+    background-size: cover;
+    width: 100vw;
+}
+
+.lower{
+    filter:drop-shadow(5px 5px 10px black);
+    font-size: clamp(20px, 4vw, 80px);
+    display: flex;
+    gap: 5vw;
+    margin-left: .2rem;
+}
+
+.bannerlinks{
+    display: flex;
+    white-space: nowrap;
+    gap: 5vw;
+    font-size: clamp(25px, 3vw, 100px);
+    margin-left: 1vw;
+    
+}
+
+.twocolumns{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.threecolumns{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.merchtable{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    gap: 2vw;
+}
+
+/* End Flexboxes*/
+
+
+
+/* Flexbox Elements */
+
+.merchitem{
+    display: flex;
+    flex-direction: column;
+    width: clamp(300px, 19vw, 750px);
+    justify-content: flex-start;
+    gap: 1vw;
+    border: .2vw solid black;
+    border-radius: .5vw;
+    background-color: rgb(19, 19, 19);
+}
+
+#benthic11{
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    min-height: 100dvh;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    display: block;
+}
+
+.albumcover {
+    aspect-ratio: 1/1;
+    height: auto;
+    filter: drop-shadow(0px 0px .3vw black);
+}
+
+.explainer{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 3vw;
+    font-size:clamp(25px,4vw,150px);
+}
+
+.videoembed {
+    width:80%;
+    aspect-ratio: 16/9;
+    height: auto;
+    filter: drop-shadow(0px 0px 5px black);
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+}
+
+.statementcontainer{
+    display: flex;
+    flex-direction: column;
+}
+
 .logo{
     position: absolute;
     top: 1vw;
@@ -354,3 +217,179 @@ hr {
     width:clamp(30px,5vw,80px);
     z-index: 1000;
 }
+
+/* End Flexbox Elements */
+
+
+
+/* Element Elements */
+
+.santacruz {
+    text-shadow: 1px 1px 5px black;
+    margin-left: 1vw;
+    margin-bottom: 0vw;
+    margin-top: -10%;
+    font-size: clamp(27px, 3.5vw, 150px);
+}
+
+.merchitem button{
+    font-family: Helvetica Ultracondensed;
+    font-size:clamp(20px,3vw,150px);
+    padding: .5vw;
+    border: 0;
+    stroke-width: 5vw;
+    stroke: black;
+    color:black;
+    background-color:rgba(255, 255, 255, 0.753);
+    margin-bottom: 4vw;
+}
+
+.merchphoto {
+    width:85%;
+    filter: drop-shadow(0px 0px .1vw black);
+    margin-top: 2vw;
+    margin-bottom: 2.5vw;
+}
+
+.statementcontainer .statement{
+    font-size:clamp(25px,4vw,150px);
+
+}
+
+.twocolumns .nowrap .albumtitle .distinction{
+    white-space: nowrap;
+}
+
+.albumtitle{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: clamp(35px, 7.5vw, 150px);
+    filter: drop-shadow(0px 0px 15px black);
+}
+
+.albumrow .projiframe{
+    width: clamp(300px, 35vw, 80vw);
+    height: clamp(50px, 51vw, 80vw);
+    filter: drop-shadow(0px 0px .3vw black);
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+
+.albumrow .albumcover {
+    width: clamp(225px, 30vw, 80vw);
+}
+
+.nowrap > div{
+    width: 100%;
+}
+
+.merchtext{
+    display: flex;
+    justify-content: center;
+    white-space: wrap;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size:clamp(25px,3vw,150px);
+}
+
+.statement{
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size:clamp(17px,3vw,150px);
+}
+
+/* End Element Elements */
+
+
+
+/* Fundamental Changes */
+
+a:hover img{
+    opacity: .75;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
+h1 {
+    display: inline-block;
+    margin-left: 1vw;
+    font-size: clamp(50px, 15vw, 150px);
+    text-shadow: 1px 1px 5px black;
+}
+
+h2 {
+    font-size: clamp(40px, 9vw, 200px);
+}
+
+h3 {
+    font-size: clamp(25px, 10vw, 200px);
+}
+
+p {
+    font-size: clamp(25px, 5vw, 75px);
+}
+
+a{
+    color: rgba(255, 255, 255, 0.767);
+
+}
+
+a:hover {
+    color:rgba(255, 255, 255, 0.589)
+}
+
+hr {
+    border:none;
+    height: .5vw;
+    background-color: rgba(0, 0, 0, 0.747);
+}
+
+footer {
+    background-image: url("media/I\ touched\ the\ moss\ single\ cover.jpg");
+    width: 100%;
+    background-size: cover;
+    filter:drop-shadow(0px 0px 2px black);
+    padding: 2vw;
+
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+/* End Fundamental Changes */
+
+
+
+/*Responsive Layout*/
+
+
+
+/*End Responsive Layout*/
+
+
+
+/* Grid Boxes */
+
+
+
+
+/* End Grid Boxes */
+
+
+
+/* Grid Items */
+
+
+
+/* End Grid Items*/
