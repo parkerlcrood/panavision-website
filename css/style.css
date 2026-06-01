@@ -15,7 +15,6 @@
 
 html {
     font-family: Helvetica Ultracondensed;
-    color: rgb(199, 199, 199);
     background: black;
     scroll-behavior: smooth;
 }
@@ -66,6 +65,17 @@ html {
 
 
 
+/* Variables */
+
+:root{
+    /* Colors */
+    --TEXT-COLOR: rgba(255, 255, 255, 0.753);
+    --TEXT-HOVER-COLOR: rgba(168, 168, 168, 0.822);
+    --CONTAINER-COLOR:  rgba(14, 14, 14, 0.904);
+}
+
+
+
 /* Utility Containers */
 
 .linkbanner{
@@ -89,7 +99,7 @@ html {
     margin-right: auto;
     border:.5vw solid rgb(8, 8, 8);
     border-radius: 1vw;
-    background-color: rgba(14, 14, 14, 0.904);
+    background-color: var(--CONTAINER-COLOR);
     filter: drop-shadow(0px 0px 5vw black);
     padding-bottom: 3vw;
 }
@@ -114,6 +124,7 @@ html {
 .lower{
     filter:drop-shadow(5px 5px 10px black);
     font-size: clamp(20px, 4vw, 80px);
+    color: var(--TEXT-COLOR);
     display: flex;
     gap: 5vw;
     margin-left: .2rem;
@@ -124,6 +135,7 @@ html {
     white-space: nowrap;
     gap: 5vw;
     font-size: clamp(25px, 3vw, 100px);
+    color: var(--TEXT-COLOR);
     margin-left: 1vw;
     
 }
@@ -189,6 +201,7 @@ html {
     margin-right: 3vw;
     margin-bottom: 3vw;
     font-size:clamp(25px,4vw,150px);
+    color: var(--TEXT-COLOR);
 }
 
 .videoembed {
@@ -225,18 +238,24 @@ html {
     margin-bottom: 0vw;
     margin-top: -10%;
     font-size: clamp(27px, 3.5vw, 150px);
+    color: var(--TEXT-COLOR);
 }
 
 .merchitem button{
     font-family: Helvetica Ultracondensed;
     font-size:clamp(35px,3vw,150px);
+    color: var(--TEXT-COLOR);
     padding: .5vw;
     border: 0;
     stroke-width: 5vw;
     stroke: black;
     color:black;
-    background-color:rgba(255, 255, 255, 0.753);
+    background-color:var(--TEXT-COLOR);
     margin-bottom: 4vw;
+}
+
+.merchitem button:hover{
+    background-color:var(--TEXT-HOVER-COLOR);
 }
 
 .merchphoto {
@@ -248,6 +267,7 @@ html {
 
 .statementcontainer .statement{
     font-size:clamp(25px,4vw,150px);
+    color: var(--TEXT-COLOR);
 
 }
 
@@ -259,6 +279,7 @@ html {
     margin-left: 10%;
     margin-right: 10%;
     font-size: clamp(35px, 7.5vw, 150px);
+    color: var(--TEXT-COLOR);
     filter: drop-shadow(0px 0px 15px black);
 }
 
@@ -286,12 +307,14 @@ html {
     margin-right: 10%;
     margin-bottom: 2vw;
     font-size:clamp(25px,2.5vw,150px);
+    color: var(--TEXT-COLOR);
 }
 
 .statement{
     padding-left: 3vw;
     padding-right: 3vw;
     font-size:clamp(17px,3vw,150px);
+    color: var(--TEXT-COLOR);
 }
 
 /* End Element Elements */
@@ -310,11 +333,13 @@ h1 {
     margin-left: 1vw;
     font-size: clamp(50px, 15vw, 150px);
     text-shadow: 1px 1px 5px black;
+    color: var(--TEXT-COLOR);
 }
 
 h2 {
     font-size: clamp(40px, 9vw, 200px);
     margin-bottom: 3vw;
+    color: var(--TEXT-COLOR);
 }
 
 h3 {
@@ -326,12 +351,12 @@ p {
 }
 
 a{
-    color: rgba(255, 255, 255, 0.767);
+    color:var(--TEXT-COLOR);
 
 }
 
 a:hover {
-    color:rgba(255, 255, 255, 0.589)
+    color:var(--TEXT-HOVER-COLOR);
 }
 
 hr {
