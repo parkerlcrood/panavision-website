@@ -8,14 +8,14 @@
 
 @font-face {
     font-family: Helvetica Ultracondensed;
-    src: url('fonts/HelveticaUltraCompressed.otf');
-    font-weight: normal;
     font-style: normal;
+    font-weight: normal;
+    src: url('fonts/HelveticaUltraCompressed.otf');
 }
 
 html {
-    font-family: Helvetica Ultracondensed;
     background: black;
+    font-family: Helvetica Ultracondensed;
     scroll-behavior: smooth;
 }
 
@@ -25,40 +25,52 @@ html {
 
 /* Utility Classes*/
 
+#top{
+}
+
+#backtotop{
+    margin: 0 ;
+    padding: 0;
+    width: clamp(90px,15vw,500px);
+    margin-bottom: 5vw;
+    border: .1vw solid var(--TEXT-COLOR);
+}
+
+
 .offscreen {
-    position:absolute;
     left:-100000vw;
+    position:absolute;
 }
 
 
 .twocolumns > .nowrap{
-    width:100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width:100%;
 }
 
 .albumrow{
-    width: 100%;
-    min-height: 250px;
-    display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     margin-bottom: 2vw;
+    min-height: 250px;
+    width: 100%;
 }
 
 .threecolumns > .nowrap{
-    width:clamp(300px, 43vw, 75%);
-    min-width: 33%;
+    align-items: center;
+    align-items: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+    min-width: 33%;
     white-space: nowrap;
+    width:clamp(300px, 43vw, 75%);
 }
 
 /* End Utility Classes*/
@@ -69,15 +81,15 @@ html {
 
 :root{
     /* Colors */
+    --CONTAINER-COLOR:  rgba(14, 14, 14, 0.904);
     --TEXT-COLOR: rgb(187, 187, 187);
     --TEXT-HOVER-COLOR: rgba(168, 168, 168, 0.822);
-    --CONTAINER-COLOR:  rgba(14, 14, 14, 0.904);
 
     /* Shadow */
-    --TEXT-SHADOW: 0rem 0rem 0.055em rgb(0, 0, 0);
-    --S-TEXT-SHADOW: 0rem 0rem 0.125em rgb(0, 0, 0);
     --BANNER-SHADOW: 0rem .5rem 1vw rgb(0, 0, 0);
     --PHOTO-SHADOW: 0rem 0vw .5vw rgb(0, 0, 0);
+    --S-TEXT-SHADOW: 0rem 0rem 0.125em rgb(0, 0, 0);
+    --TEXT-SHADOW: 0rem 0rem 0.055em rgb(0, 0, 0);
 }
 
 
@@ -85,28 +97,28 @@ html {
 /* Utility Containers */
 
 .linkbanner{
+    background-color: black;
+    box-shadow: var(--BANNER-SHADOW);
+    left: 0;
     position: sticky;
     top: 0;
-    left: 0;
-    background-color: black;
     width: 100%;
-    box-shadow: var(--BANNER-SHADOW);
     z-index: 1;
 }
 
 .container {
-    text-align: center;
+    background-color: var(--CONTAINER-COLOR);
+    border-radius: 1vw;
+    border:.5vw solid rgb(8, 8, 8);
     display: flex;
     flex-direction: column;
-    width: 88vw;
-    margin-top: 5vw;
     margin-bottom: 5vw;
     margin-left: auto;
     margin-right: auto;
-    border:.5vw solid rgb(8, 8, 8);
-    border-radius: 1vw;
-    background-color: var(--CONTAINER-COLOR);
+    margin-top: 5vw;
     padding-bottom: 3vw;
+    text-align: center;
+    width: 88vw;
 }
 
 /* End Utility Containers */
@@ -127,20 +139,20 @@ html {
 }
 
 .lower{
-    font-size: clamp(20px, 4vw, 80px);
     color: var(--TEXT-COLOR);
     display: flex;
-    text-shadow: var(--S-TEXT-SHADOW);
+    font-size: clamp(20px, 4vw, 80px);
     gap: 5vw;
     margin-left: .2rem;
+    text-shadow: var(--S-TEXT-SHADOW);
 }
 
 .bannerlinks{
     display: flex;
-    white-space: nowrap;
-    gap: 5vw;
     font-size: clamp(25px, 3vw, 100px);
+    gap: 5vw;
     margin-left: 1vw; 
+    white-space: nowrap;
 }
 
 .twocolumns{
@@ -158,12 +170,12 @@ html {
 }
 
 .merchtable{
-    margin-top: 3vw;
+    align-content: space-between;
     display: flex;
     flex-direction: row;
-    align-content: space-between;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3vw;
 }
 
 /* End Flexboxes*/
@@ -173,25 +185,45 @@ html {
 /* Flexbox Elements */
 
 .merchitem{
+    background-color: rgba(41, 41, 41, 0.233);
     box-shadow: var(--S-TEXT-SHADOW);
     display: flex;
     flex-direction: column;
-    width: clamp(275px, 30vw, 400px);
     justify-content: flex-start;
-    background-color: rgba(41, 41, 41, 0.233);
     margin-bottom: 3vw;
+    width: clamp(275px, 30vw, 400px);
+}
+
+#backtotop:hover{
+    opacity: 75%;
+}
+
+#backtotop a:hover{
+    color: var(--TEXT-COLOR);
+}
+
+#backtotop a:any-link .statement{
+    color: var(--TEXT-COLOR);
+    text-decoration: none;
+}
+
+#backtotop .statement{
+    font-size: clamp(20px, 3vw, 250px);
+    text-shadow: var(--S-TEXT-SHADOW);
+    margin-bottom: .5vw;
+    text-decoration: none;
 }
 
 #benthic11{
-    object-fit: cover;
-    position: fixed;
-    z-index: -1;
-    width: 100%;
-    min-height: 100%;
-    left: 0;
-    top: 0;
-    overflow: hidden;
     display: block;
+    left: 0;
+    min-height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
 }
 
 .albumcover {
@@ -200,21 +232,21 @@ html {
 }
 
 .explainer{
+    color: var(--TEXT-COLOR);
+    font-size:clamp(25px,4vw,150px);
+    margin-bottom: 3vw;
     margin-left: 3vw;
     margin-right: 3vw;
-    margin-bottom: 3vw;
-    font-size:clamp(25px,4vw,150px);
-    color: var(--TEXT-COLOR);
     text-shadow: var(--S-TEXT-SHADOW);
 }
 
 .videoembed {
-    width:80%;
     aspect-ratio: 16/9;
-    height: auto;
-    margin-top: 2vw;
-    margin-bottom: 4vw;
     filter: drop-shadow(var(--PHOTO-SHADOW));
+    height: auto;
+    margin-bottom: 4vw;
+    margin-top: 2vw;
+    width:80%;
 }
 
 .statementcontainer{
@@ -224,8 +256,8 @@ html {
 
 .logo{
     position: absolute;
-    top: 1vw;
     right: 1vw;
+    top: 1vw;
     width:clamp(30px,5vw,80px);
     z-index: 1000;
 }
@@ -237,25 +269,25 @@ html {
 /* Element Elements */
 
 .santacruz {
-    margin-left: 1vw;
-    margin-bottom: 0vw;
-    margin-top: -10%;
-    font-size: clamp(27px, 3.5vw, 150px);
     color: var(--TEXT-COLOR);
+    font-size: clamp(27px, 3.5vw, 150px);
+    margin-bottom: 0vw;
+    margin-left: 1vw;
+    margin-top: -10%;
     text-shadow: var(--S-TEXT-SHADOW);
 }
 
 .merchitem button{
+    background-color:var(--TEXT-COLOR);
+    border: 0;
+    box-shadow: var(--S-TEXT-SHADOW);
+    color:black;
     font-family: Helvetica Ultracondensed;
     font-size:clamp(35px,3vw,150px);
+    margin-bottom: 4vw;
     padding: .5vw;
-    border: 0;
     stroke-width: 5vw;
     stroke: black;
-    color:black;
-    box-shadow: var(--S-TEXT-SHADOW);
-    background-color:var(--TEXT-COLOR);
-    margin-bottom: 4vw;
 }
 
 .merchitem button:hover{
@@ -263,16 +295,15 @@ html {
 }
 
 .merchphoto {
-    width:80%;
-    margin-top: 2vw;
     margin-bottom: 2.5vw;
+    margin-top: 2vw;
+    width:80%;
 }
 
 .statementcontainer .statement{
-    font-size:clamp(25px,4vw,150px);
     color: var(--TEXT-COLOR);
+    font-size:clamp(25px,4vw,150px);
     text-shadow: var(--S-TEXT-SHADOW);
-
 }
 
 .twocolumns .nowrap .albumtitle .distinction{
@@ -280,23 +311,23 @@ html {
 }
 
 .albumtitle{
+    color: var(--TEXT-COLOR);
+    font-size: clamp(35px, 7.5vw, 150px);
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 3vw;
-    font-size: clamp(35px, 7.5vw, 150px);
-    color: var(--TEXT-COLOR);
     text-shadow: var(--TEXT-SHADOW);
 }
 
 .albumrow .projiframe{
-    width: clamp(225px, 35vw, 80vw);
-    height: clamp(50px, 41vw, 950px);
     filter: drop-shadow(var(--PHOTO-SHADOW));
+    height: clamp(50px, 41vw, 950px);
+    width: clamp(225px, 35vw, 80vw);
 }
 
 .albumrow .albumcover {
-    width: clamp(200px, 36vw, 80vw);
     box-shadow: var(--PHOTO-SHADOW);
+    width: clamp(200px, 36vw, 80vw);
 }
 
 .nowrap > div{
@@ -304,35 +335,35 @@ html {
 }
 
 .merchtext{
+    color: var(--TEXT-COLOR);
     display: flex;
+    font-size:clamp(25px,2.5vw,150px);
     justify-content: center;
-    white-space: wrap;
+    margin-bottom: 2vw;
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 2vw;
-    font-size:clamp(25px,2.5vw,150px);
-    color: var(--TEXT-COLOR);
     text-shadow: var(--S-TEXT-SHADOW);
+    white-space: wrap;
 }
 
 .statement{
+    color: var(--TEXT-COLOR);
+    font-size:clamp(17px,3vw,150px);
     padding-left: 3vw;
     padding-right: 3vw;
-    font-size:clamp(17px,3vw,150px);
-    color: var(--TEXT-COLOR);
 }
 
 .banner h1 {
-    display: inline-block;
-    margin-left: 1vw;
-    font-size: clamp(50px, 15vw, 150px);
     color: var(--TEXT-COLOR);
+    display: inline-block;
+    font-size: clamp(50px, 15vw, 150px);
+    margin-left: 1vw;
     text-shadow: var(--TEXT-SHADOW);
 }
 
 .container h2 {
-    font-size: clamp(40px, 15vw, 200px);
     color: var(--TEXT-COLOR);
+    font-size: clamp(40px, 15vw, 200px);
     text-shadow: var(--TEXT-SHADOW);
 }
 
@@ -343,18 +374,18 @@ html {
 /* Fundamental Changes */
 
 a:hover img{
-    opacity: .75;
     background-color: rgba(0, 0, 0, 0.363);
+    opacity: .75;
 }
 
 h3 {
-    font-size: clamp(25px, 10vw, 200px);
     color: var(--TEXT-COLOR);
+    font-size: clamp(25px, 10vw, 200px);
 }
 
 p {
-    font-size: clamp(25px, 5vw, 75px);
     color: var(--TEXT-COLOR);
+    font-size: clamp(25px, 5vw, 75px);
 }
 
 a{
@@ -367,32 +398,31 @@ a:hover {
 }
 
 hr {
+    background-color: rgba(0, 0, 0, 0.747);
     border:none;
     height: .5vw;
-    background-color: rgba(0, 0, 0, 0.747);
 }
 
 footer {
     background-image: url("media/I\ touched\ the\ moss\ single\ cover.jpg");
-    width: 100%;
     background-size: cover;
     padding: 2vw;
-
+    width: 100%;
 }
 
 body {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 100vh;
 }
 
 main{
-    flex-grow: 1;
+    align-content: flex-start;
     display: flex;
+    flex-grow: 1;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: flex-start;
 }
 
 /* End Fundamental Changes */
@@ -408,7 +438,6 @@ main{
 
 
 /* Grid Boxes */
-
 
 
 
