@@ -43,7 +43,7 @@ html {
     min-height: 250px;
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-end;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 2vw;
@@ -289,14 +289,13 @@ html {
 }
 
 .albumrow .projiframe{
-    width: clamp(275px, 35vw, 80vw);
+    width: clamp(225px, 35vw, 80vw);
     height: clamp(50px, 41vw, 950px);
     filter: drop-shadow(var(--PHOTO-SHADOW));
-    margin-top: 3vw;
 }
 
 .albumrow .albumcover {
-    width: clamp(225px, 41vw, 80vw);
+    width: clamp(200px, 36vw, 80vw);
     box-shadow: var(--PHOTO-SHADOW);
 }
 
