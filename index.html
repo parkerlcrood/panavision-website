@@ -9,25 +9,28 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header>
-            <div class="banner" id="top">
-            <span>
-                <h1>Pana-vision</h1><img class="logo" src="css/media/Panavision Logo.jpg">
-                <p class="santacruz">Santa Cruz, CA</p>
-            </span>
+        <header class="banner">
+            <div class="topbanner">
+                <a href="index.html"><img class="bannername" src="css/media/PanavisionName.png"></a>
+                    <section class="menubuttoncontainer">
+                        <button class="menubutton">
+                            <div class="menuicon"></div>
+                        </button>
+                    </section>
             </div>
-            
+            <nav class="bannernav">
+                <ul class="bannerlinks">
+                    <li><a href="index.html" class="sociallist">Home</a></li>
+                    <li><a href="videos.html" class="sociallist">Videos</a> </li>
+                    <li><a href="music.html" class="sociallist">Music</a> </li>
+                    <li><a href="aboutus.html" class="sociallist">About Us</a> </li>
+                    <li><a href="contact.html" class="sociallist">Contact Us</a></li>
+                    <li><a href="merch.html" class="sociallist">Merch</a></li>
+                    <li><a href="upcomingshows.html" class="sociallist">Upcoming Shows</a></li>
+                </ul>
+            </nav>
         </header>
-        <main>
-        <div class="linkbanner">
-            <div class="bannerlinks">
-                
-                <a href="aboutus.html" class="sociallist">About Us</a> 
-                <a href="contact.html" class="sociallist">Contact Us</a>
-                <a href="merch.html" class="sociallist">Merch</a>
-                <a href="upcomingshows.html" class="sociallist">Upcoming Shows</a>
-            </div>
-        </div>
+        <main id="top">
             <video autoplay loop muted id="benthic11">
             <source src="css/media/Benthic11.mp4" type="video/mp4">
             </video>
@@ -55,48 +58,25 @@
                     </div>
                 </section> 
             </article>
-            <br/>
-            <article class="container"><h2>Videos</h2>
-                <hr>
-                <section class="threecolumns">
-                    <div class="nowrap">
-                        <div>
-                        <h3 class="albumtitle">Move Me, Wave</h3>
-                        <iframe class="videoembed" src="https://www.youtube-nocookie.com/embed/UwkVkf-6H-M?si=qc_OxxWThjUhFJQK" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>  
-                    <div class="nowrap">
-                    <h3 class="albumtitle">I Touched the Moss</h3>
-                    <video class="videoembed" src="css/media/x.mp4" controls></video>
-                    </div>
-                    <div class="nowrap">
-                        <h3 class="albumtitle">Benthic 11</h3>
-                        <iframe class="videoembed" src="https://www.youtube-nocookie.com/embed/UI6zybd4VaE?si=4yRJSJdM_Nr-Vu6W" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <div class="nowrap">
-                        <h3 class="albumtitle">BigBoyTV.wav</h3>
-                        <iframe class="videoembed" src="https://www.youtube-nocookie.com/embed/uqfRkmf0ROw?si=GyCZwgS-eADVHQ0-" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </section>
-            </article>
-            <article class="container" id="backtotop">
-                <section>
+            <article class="bttcontainer" id="backtotop">
                     <a href="#top" ><p class="statement">Back to Top</p></a>
-                </section>
             </article>
         </main>
         <footer>
             <nav>
-                <div class="lower">
-                    <a href="contact.html" target="_blank">Contact Us</a>
-                    <a href="https://www.youtube.com/@panavisionband" target="_blank">YouTube</a>
-                    <a href="https://www.instagram.com/panavisionband/" target="_blank">Instagram</a>
-                    <a href="https://open.spotify.com/artist/4OosEji0B0xTZfMmtXCS7r?si=ZA-Yx0mNSoOFzqbV-uGRFQ" target="_blank">Spotify</a>
-                    <a href="https://music.apple.com/us/artist/pana-vision/1642425511" target="_blank">Apple Music</a>
-                </div>
-            </nav>
-                        
-        </footer>
-        
+                <section class="footerbox">
+                    <ul class="lower">
+                        <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                        <li><a href="https://www.youtube.com/@panavisionband" target="_blank">YouTube</a></li>
+                        <li><a href="https://www.instagram.com/panavisionband/" target="_blank">Instagram</a></li>
+                        <li><a href="https://open.spotify.com/artist/4OosEji0B0xTZfMmtXCS7r?si=ZA-Yx0mNSoOFzqbV-uGRFQ" target="_blank">Spotify</a></li>
+                        <li><a href="https://music.apple.com/us/artist/pana-vision/1642425511" target="_blank">Apple Music</a></li> 
+                    </ul>
+                    <section class="logocontainer">
+                        <img class="logo" src="css/media/Panavision Logo.jpg">
+                    </section>
+                </section>
+            </nav>      
+        </footer>   
     </body>
 </html>
