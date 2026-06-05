@@ -1,0 +1,15 @@
+const menuButton = document.getElementById("menubutton");
+
+let menuOpen = false;
+
+menuButton.addEventListener("click", () => openMenu());
+
+function openMenu(){
+
+    console.log("clicked");
+
+    menuicon.classList.toggle("open");
+    menubutton.classList.toggle("open");
+    bannernav.classList.toggle("open");
+    bannerlinks.classList.toggle("open");
+}

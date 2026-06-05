@@ -8,17 +8,18 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header class="banner">
-            <div class="topbanner">
+    <script src="openMenu.js">alert("Script loaded");</script>
+        <header id="banner">
+            <div id="topbanner">
                 <a href="index.html"><img class="bannername" src="css/media/PanavisionName.png"></a>
-                    <section class="menubuttoncontainer">
-                        <button class="menubutton">
-                            <div class="menuicon"></div>
+                    <section id="menubuttoncontainer">
+                        <button id="menubutton" onclick="openMenu()">
+                            <div id="menuicon"></div>
                         </button>
                     </section>
             </div>
-            <nav class="bannernav">
-                <ul class="bannerlinks">
+            <nav id="bannernav">
+                <ul id="bannerlinks">
                     <li><a href="index.html" class="sociallist">Home</a></li>
                     <li><a href="videos.html" class="sociallist">Videos</a> </li>
                     <li><a href="music.html" class="sociallist">Music</a> </li>
@@ -29,12 +30,18 @@
                 </ul>
             </nav>
         </header>
-        <main id="top">
-            <!-- <img src="/css/media/fortniteburger.jpg" style="width:500px"> -->
-            <video autoplay loop muted id="benthic11">
-            <source src="css/media/Benthic11.mp4" type="video/mp4">
+        <div class="cover">
+            <video autoplay loop muted playsinline poster="css/media/I touched the moss single cover.jpg">
+                <source src="css/media/Benthic11.mp4" type="video/mp4"/>
+                <img src="css/media/I touched the moss single cover.jpg" alt=""/>
             </video>
-            <article class="container"><h2>Merch</h2>
+        </div>
+        <main id="top" class="mainlike">
+            <!-- <img src="/css/media/fortniteburger.jpg" style="width:500px"> -->
+            <article class="container">
+                <div class="cardtitle">
+                    <h2>Merch</h2>
+                </div>
                 <section class="merchtable">
                     <div class="merchitem">
                         <div><img class="merchphoto" src="css/media/Like Water Alt.jpeg"></div>

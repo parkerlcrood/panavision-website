@@ -8,17 +8,18 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header class="banner">
-            <div class="topbanner">
+    <script src="openMenu.js">alert("Script loaded");</script>
+        <header id="banner">
+            <div id="topbanner">
                 <a href="index.html"><img class="bannername" src="css/media/PanavisionName.png"></a>
-                    <section class="menubuttoncontainer">
-                        <button class="menubutton">
-                            <div class="menuicon"></div>
+                    <section id="menubuttoncontainer">
+                        <button id="menubutton" onclick="openMenu()">
+                            <div id="menuicon"></div>
                         </button>
                     </section>
             </div>
-            <nav class="bannernav">
-                <ul class="bannerlinks">
+            <nav id="bannernav">
+                <ul id="bannerlinks">
                     <li><a href="index.html" class="sociallist">Home</a></li>
                     <li><a href="videos.html" class="sociallist">Videos</a> </li>
                     <li><a href="music.html" class="sociallist">Music</a> </li>
@@ -29,11 +30,17 @@
                 </ul>
             </nav>
         </header>
-        <main id="top">
-            <video autoplay loop muted id="benthic11">
-            <source src="css/media/Benthic11.mp4" type="video/mp4">
+        <div class="cover">
+            <video autoplay loop muted playsinline poster="css/media/I touched the moss single cover.jpg">
+                <source src="css/media/Benthic11.mp4" type="video/mp4"/>
+                <img src="css/media/I touched the moss single cover.jpg" alt=""/>
             </video>
-            <article class="container"><h2>Upcoming Shows</h2>
+        </div>
+        <main id="top" class="mainlike">
+            <article class="container">
+                <div class="cardtitle">
+                    <h2>Upcoming Shows</h2>
+                </div>
                 <section>
                     <p class="explainer">We currently have no upcoming shows...
                     </p>

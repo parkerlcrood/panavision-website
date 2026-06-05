@@ -8,17 +8,18 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header class="banner">
-            <div class="topbanner">
+    <script src="openMenu.js">alert("Script loaded");</script>
+        <header id="banner">
+            <div id="topbanner">
                 <a href="index.html"><img class="bannername" src="css/media/PanavisionName.png"></a>
-                    <section class="menubuttoncontainer">
-                        <button class="menubutton">
-                            <div class="menuicon"></div>
+                    <section id="menubuttoncontainer">
+                        <button id="menubutton" onclick="openMenu()">
+                            <div id="menuicon"></div>
                         </button>
                     </section>
             </div>
-            <nav class="bannernav">
-                <ul class="bannerlinks">
+            <nav id="bannernav">
+                <ul id="bannerlinks">
                     <li><a href="index.html" class="sociallist">Home</a></li>
                     <li><a href="videos.html" class="sociallist">Videos</a> </li>
                     <li><a href="music.html" class="sociallist">Music</a> </li>
@@ -29,11 +30,17 @@
                 </ul>
             </nav>
         </header>
-        <main id="top">
-            <video autoplay loop muted id="benthic11">
-            <source src="css/media/Benthic11.mp4" type="video/mp4">
+        <div class="cover">
+            <video autoplay loop muted playsinline poster="css/media/I touched the moss single cover.jpg">
+                <source src="css/media/Benthic11.mp4" type="video/mp4"/>
+                <img src="css/media/I touched the moss single cover.jpg" alt=""/>
             </video>
-            <article class="container"><h2>About Us</h2>
+        </div>
+        <main id="top" class="mainlike">
+            <article class="container">
+                <div class="cardtitle">
+                    <h2>About Us</h2>
+                </div>
                 <section>
                     <p class="statement">
                     Pana-vision is a Santa Cruz based art rock band featuring Aidan Botticella (Vocals/Guitar/Keys), Parker Reed (Guitar/Keys/Drum Machines) and Ian Hardcastle (Bass). The first EP, The Frown, is made up of experimental tracks that Aidan made before the band's founding. We (Aidan and Parker) after that made a series of singles as a build up to an album that we hoped would come sooner than it did. Since then, we picked up our bassist, Ian, and are performing around Santa Cruz to show off our new material! Our album, Like Water, was released on December 30th, 2025. This album features five of the singles we have released in the past years along with five other tracks that we've played live in previous sets. Some are saying that we are already at work on a second album before our first is even released...
