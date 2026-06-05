@@ -1,0 +1,594 @@
+/* 
+/* Reset */ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Helvetica Ultracondensed;
+    font-style: normal;
+    font-weight: normal;
+    src: url('/css/fonts/HelveticaUltraCompressed.otf');
+}
+
+html {
+    background: black;
+    font-family: Helvetica Ultracondensed;
+    scroll-behavior: smooth;
+}
+
+/* End Reset */
+
+
+
+/* Utility Classes*/
+
+
+
+
+/* End Utility Classes*/
+
+
+
+/* Variables */
+
+:root{
+    /* Colors */
+    --CONTAINER-COLOR:  rgba(14, 14, 14, 0.904);
+    --TEXT-COLOR: rgb(255, 255, 255);
+    --TEXT-HOVER-COLOR: rgba(168, 168, 168, 0.822);
+
+    /* Shadow */
+    --BANNER-SHADOW: 0rem .5rem 1vw rgb(0, 0, 0);
+    --PHOTO-SHADOW: 0rem 0vw 2rem rgb(0, 0, 0);
+    --S-TEXT-SHADOW: 0rem 0rem 0.125em rgb(0, 0, 0);
+    --TEXT-SHADOW: 0rem 0rem 0.055em rgb(0, 0, 0);
+    --VIDEO-TEXT-SHADOW: 0rem 0rem 1vw rgb(0, 0, 0);
+    --VIDEO-TITLE-SHADOW: 0rem 0rem 1vw rgb(0, 0, 0);
+
+    /* Size */
+    --VIDEO-WIDTH: 150px 10% 1000px
+    --ICON-WIDTH: 40px;
+    --ICON-HEIGHT: 5px;
+    --TRANSLATE-Y: 12px;
+    --TRANSLATE-X-MINUS: -20px;
+
+}
+
+
+
+/* Utility Containers */
+
+.merchpage{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2rem;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+/* End Utility Containers */
+
+
+
+/* Flexboxes */
+
+#banner{
+    background-color: black;
+    box-shadow: var(--BANNER-SHADOW);
+    left: 0;
+    position: relative;
+    top: 0; 
+    width: 100%;
+    z-index: 5;
+}
+
+.footerbox{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--BANNER-SHADOW);
+}
+
+.lower{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--TEXT-COLOR);
+    font-size: clamp(20px, 3.5vw, 80px);
+    gap: 3vw;
+    text-shadow: var(--S-TEXT-SHADOW);
+    margin-left: 1vw;
+}
+
+.logocontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: .5vw;
+}
+
+
+
+#bannerlinks{
+    display: flex;
+    color: var(--TEXT-COLOR);
+    font-size: clamp(20px, 3vw, 80px);
+    gap: 2rem;
+    text-shadow: var(--S-TEXT-SHADOW);
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    background-color: black;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    z-index: 5;
+}
+
+.merchtextbox{
+    width:50%;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.merchname h2{
+    align-self: flex-start;
+    font-size: clamp(10px, 6vw, 250px);
+    color: white;
+    margin-top:0;
+}
+
+.merchdesc p{
+    font-size: clamp(10px, 3vw, 250px);
+
+}
+
+.imagecontainer{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    align-items: center;
+}
+
+.merchimage{
+    background-image: url('media/Like\ Water\ Alt.jpeg');
+    width: clamp(250px, 100%, 1000px);
+    aspect-ratio: 1/1;
+    background-size: cover;
+    height: auto;
+    box-shadow: (var(--PHOTO-SHADOW));
+}
+
+#likewater{
+    background-image: url('media/Like\ Water.jpg');
+}
+
+.btmerch{
+    display: flex;
+    font-size: clamp(20px, 2vw, 50px);
+    padding: .5rem;
+    margin-top: 0;
+    background-color: black;
+}
+
+main {
+    background-color: rgb(20, 20, 20);
+    height:100vh;
+}
+
+
+
+/* End Flexboxes*/
+
+
+
+/* Flexbox Elements */
+
+.bannername{
+    width:clamp(200px, 25vw, 750px);
+}
+
+#backtotop:hover{
+    opacity: 75%;
+}
+
+#backtotop a:hover{
+    color: var(--TEXT-COLOR);
+}
+
+#backtotop a:any-link .statement{
+    color: var(--TEXT-COLOR);
+    text-decoration: none;
+}
+
+#backtotop .statement{
+    font-size: clamp(20px, 3vw, 250px);
+    text-shadow: var(--S-TEXT-SHADOW);
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.cover{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1000;
+}
+
+.logo{
+    width:clamp(20px, 3vw, 100px);
+    aspect-ratio: 1 / 1;
+    z-index: 1000;
+}
+
+#topbanner{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    left: 0;
+    top: 0; 
+    width: 100%;
+    z-index: 0;
+}
+
+/* End Flexbox Elements */
+
+
+
+/* Element Elements */
+
+.merchimage {
+    width:clamp(250px, 35vw, 500px);
+    aspect-ratio: 1/1;
+    height:clamp(250px, 35vw, 500px);
+}
+
+.merchtext{
+    color: var(--TEXT-COLOR);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-shadow: var(--S-TEXT-SHADOW);
+    white-space: wrap;
+}
+
+
+
+/* End Element Elements */
+
+
+
+/* Fundamental Changes */
+footer{
+    width:100%;
+    background-color: black;
+    height: 5vw;
+}
+
+li{
+    list-style-type: none;
+    text-wrap: nowrap;
+}
+
+a:hover img{
+    background-color: rgba(0, 0, 0, 0.363);
+    opacity: .75;
+}
+
+h3 {
+    color: var(--TEXT-COLOR);
+    font-size: clamp(25px, 10vw, 200px);
+}
+
+p {
+    color: var(--TEXT-COLOR);
+    font-size: clamp(25px, 5vw, 75px);
+}
+
+a{
+    color:var(--TEXT-COLOR);
+
+}
+
+a:hover {
+    color:var(--TEXT-HOVER-COLOR);
+}
+
+hr {
+    background-color: rgba(0, 0, 0, 0.747);
+    border:none;
+    height: .5vw;
+}
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+}
+
+/* End Fundamental Changes */
+
+
+
+/*Responsive Layout*/
+@media screen and (max-width:770px){
+
+    #banner.open{
+        display: flex;
+        flex-flow: column;
+        transform-origin: top center;
+        height: 100%;
+    }
+    
+    #bannernav{
+        display : none;
+    }
+
+    #banner{
+        display: flex;
+        flex-flow: column;
+        background-color: black;
+        box-shadow: var(--BANNER-SHADOW);
+        left: 0;
+        top: 0; 
+        width: 100%;
+        z-index: 5;
+    }
+
+    #menubuttoncontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+    }
+
+    #menubutton{
+        background-color: transparent;
+        width:100%;
+        height:100%;
+        position: relative;
+        border: none;  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        margin-right: 2vw;
+    }
+
+    #menuicon,
+    #menuicon::before,
+    #menuicon::after{
+        background-color: var(--TEXT-COLOR);
+        width:30px;
+        height:3px;
+        border-radius: 2px;
+        position: absolute;
+        transition: all 0.3s ease;
+    }
+
+    #menuicon::before{
+        content:"";
+        transform: translate(-15px, -9px);
+    }
+
+    #menuicon::after{
+        content:"";
+        transform: translate(-15px, 9px);
+    }   
+
+    #menuicon.open{
+        background-color: transparent;
+        transform: rotate(720deg);
+    }
+
+    #menuicon.open::before{
+        transform: translateX(-16px) rotate(45deg);
+    }
+
+    #menuicon.open::after{
+        transform: translateX(-16px) rotate(-45deg);
+    }
+
+    #bannernav.open{
+        display:block;
+        justify-content: center;
+        align-items: center;
+        transform-origin: top center;
+        width: 100%;
+        z-index: 5;
+    }
+    
+    #bannerlinks {
+        list-style-type: none;
+        display: none;
+        border: none;
+        
+    }
+
+    #bannerlinks.open {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        transform-origin: top center;
+        height: 80%;
+        width: 100%;
+        position:absolute;
+        gap: 0;
+        padding: 0;
+    }
+
+    #bannerlinks.open li{
+        padding: 0.5rem;
+        background-color: black;
+        
+        transform-origin: top center;
+    }
+
+    #bannerlinks.open a{
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        font-size: min(35px, 25vw);
+    }
+    
+    #topbanner{
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-content: flex-start;
+        z-index: 0;
+        transform-origin: top center;
+        width: 100%;
+    }
+
+
+
+    .footerbox{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
+    }
+
+    .lower{
+        flex-direction: column;
+        gap: 0;
+        margin:0;
+        padding:0;
+        width:50%;
+    }
+
+    .lower li{
+        width:100%;
+        text-align: center;
+        border-top: .1vw solid var(--TEXT-COLOR);
+        border-right: .1vw solid var(--TEXT-COLOR);
+        padding: 1vw;
+    }
+
+    .lower li a:hover{
+        color:var(--TEXT-HOVER-COLOR);
+    }
+
+    .logo{
+        width:clamp(100px,10vw,50px);
+        aspect-ratio: 1 / 1;
+        z-index: 1000;
+    }
+
+    .logocontainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin:0;
+        padding:0;
+        width:50%;
+        border-top: .1vw solid var(--TEXT-COLOR);
+    }
+
+    #menuicon.open{
+        background-color: transparent;
+        transform: rotate(720deg);
+    }
+
+    #menuicon.open::before{
+        transform: translateX(-16px) rotate(45deg);
+    }
+
+    #menuicon.open::after{
+        transform: translateX(-16px) rotate(-45deg);
+    }
+
+
+    .merchtextbox{
+        width:100%;
+        flex-flow: column wrap;
+    }
+
+    .merchname h2{
+        font-size: clamp(10px, 6vw, 250px);
+        text-align: center;
+        color: white;
+    }
+
+    .merchdesc p{
+        font-size: clamp(10px, 4vw, 250px);
+        text-align: center;
+
+    }
+
+    .merchpage{
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .merchimage{
+        background-image: url('media/Like\ Water\ Alt.jpeg');
+        width: clamp(250px, 80vw, 350px);
+        aspect-ratio: 1/1;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .btmerch{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: clamp(20px, 2vw, 50px);
+    }
+}
+
+@media screen and (min-width:770px){
+    #menubuttoncontainer{
+        display: none;
+    }
+}
+
+@media screen and (min-width:648px) and (max-width: 857px){
+
+}
+
+@media screen and (min-width:557px) and (max-width: 647px){
+
+}
+
+@media screen and (max-width:429px){
+
+}
+
+@media screen and (min-width: 722px) and (max-width:933px){
+
+}
+
+/*End Responsive Layout*/
+
+
+
+/*  Animations  */

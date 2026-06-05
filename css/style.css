@@ -113,7 +113,7 @@ html {
     --VIDEO-TITLE-SHADOW: 0rem 0rem 1vw rgb(0, 0, 0);
 
     /* Size */
-    --VIDEO-WIDTH: 150px 10% 1000px
+    --VIDEO-WIDTH: 150px 10% 1000px;
     --ICON-WIDTH: 40px;
     --ICON-HEIGHT: 5px;
     --TRANSLATE-Y: 12px;
@@ -134,7 +134,7 @@ html {
 
 #topbanner{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: black;
     left: 0;
     position: sticky;
@@ -173,17 +173,6 @@ html {
     padding: 1vw;
     text-align: center;
 }
-
-/* .bttcontainer { //THIS BROKE IT, I OWE THIS TO LACK OF MARGINS//
-    background-color: var(--CONTAINER-COLOR);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    width: clamp(90px,15vw,500px);
-    border: .1vw solid var(--TEXT-COLOR);
-
-} */
 
 .videopage {
     background-color: var(--CONTAINER-COLOR);
@@ -279,10 +268,9 @@ html {
 }
 
 .merchtable{
-    align-content: space-between;
+    
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     margin-top: 3vw;
 }
@@ -303,10 +291,14 @@ html {
     background-color: rgba(41, 41, 41, 0.233);
     box-shadow: var(--S-TEXT-SHADOW);
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     justify-content: flex-start;
-    margin-bottom: 3vw;
-    width: clamp(275px, 30vw, 400px);
+    align-items: center;
+    width: clamp(250px, 20vw, 400px);
+    height: clamp(150px, 100%, 750px);
+    padding-top: 3rem;
+    padding-bottom: 0;
+    margin-bottom: 3rem;
 }
 
 #backtotop:hover{
@@ -412,9 +404,23 @@ html {
 }
 
 .merchphoto {
-    margin-bottom: 2.5vw;
-    margin-top: 2vw;
-    width:80%;
+    background-image: url('media/Like\ Water\ Alt.jpeg');
+    width: 80%;
+    background-size: cover;
+    aspect-ratio: 1/1;
+    height: auto;
+}
+
+.merchitem:nth-child(2) .merchphoto {
+    background-image: url('media/Like\ Water.jpg');
+}
+
+.merchitem:nth-child(3) .merchphoto {
+    background-image: url('media/I\ touched\ the\ moss\ single\ cover.jpg');
+}
+
+.merchitem:nth-child(4) .merchphoto {
+    background-image: url('media/Panavision\ Logo.jpg');
 }
 
 .statementcontainer .statement{
@@ -636,6 +642,19 @@ body {
         transform: translate(-15px, 9px);
     }   
 
+    #menuicon.open{
+        background-color: transparent;
+        transform: rotate(720deg);
+    }
+
+    #menuicon.open::before{
+        transform: translateX(-16px) rotate(45deg);
+    }
+
+    #menuicon.open::after{
+        transform: translateX(-16px) rotate(-45deg);
+    }
+
     #bannernav.open{
         display:block;
         transform-origin: top center;
@@ -675,7 +694,6 @@ body {
         align-content: flex-start;
         z-index: 5;
         transform-origin: top center;
-        
     }
 
     .footerbox{
@@ -724,18 +742,7 @@ body {
         border-top: .1vw solid var(--TEXT-COLOR);
     }
 
-    #menuicon.open{
-        background-color: transparent;
-        transform: rotate(720deg);
-    }
-
-    #menuicon.open::before{
-        transform: translateX(-16px) rotate(45deg);
-    }
-
-    #menuicon.open::after{
-        transform: translateX(-16px) rotate(-45deg);
-    }
+    
 
     .videotable{
         display:flex;
@@ -820,9 +827,9 @@ body {
     }
 
     .albumrow .albumcover {
-    box-shadow: var(--PHOTO-SHADOW);
-    width: 80%;
-}
+        box-shadow: var(--PHOTO-SHADOW);
+        width: 80%;
+    }
 }
 
 @media screen and (min-width:770px){
