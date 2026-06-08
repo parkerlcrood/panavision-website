@@ -3,7 +3,7 @@ let merchArray = [
         image : "url('css/media/Like\ Water\ Alt.jpeg')",
         text: 'Like Water (Getting Killed Edition) - CD',
         buttontext : 'Buy Now',
-        pageurl : '/merchpages/LWGKCD/LWGKCD.html'
+        pageurl : '/panavision-website/merchpages/LWGKCD/LWGKCD.html'
     },          
     {
         image : "url('css/media/Like\ Water.jpg')",
