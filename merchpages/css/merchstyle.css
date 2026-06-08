@@ -71,6 +71,30 @@ html {
 
 }
 
+#modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5000;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+#modal img{
+    height:45vw;
+    width:45vw;
+    border:.5rem solid white;
+}
+
+.hidden {
+    display: none;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+}
+
 /* End Utility Containers */
 
 
@@ -639,6 +663,13 @@ header{
     .separator{
         display: none;
     }
+
+    #modal img{
+        height:80vw;
+        width:80vw;
+        margin-top: -23rem;
+        border:.2rem solid white;
+    }
 }
 
 @media screen and (min-width:1100px){
@@ -660,6 +691,13 @@ header{
 }
 
 @media screen and (min-width: 722px) and (max-width:933px){
+
+    #modal img{
+        margin-top: 5rem;
+        height:80vh;
+        width:80vh;
+        border:.2rem solid white;
+    }
 
 }
 

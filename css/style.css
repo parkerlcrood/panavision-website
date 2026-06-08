@@ -404,23 +404,10 @@ html {
 }
 
 .merchphoto {
-    background-image: url('media/Like\ Water\ Alt.jpeg');
     width: 80%;
     background-size: cover;
     aspect-ratio: 1/1;
     height: auto;
-}
-
-.merchitem:nth-child(2) .merchphoto {
-    background-image: url('media/Like\ Water.jpg');
-}
-
-.merchitem:nth-child(3) .merchphoto {
-    background-image: url('media/I\ touched\ the\ moss\ single\ cover.jpg');
-}
-
-.merchitem:nth-child(4) .merchphoto {
-    background-image: url('media/Panavision\ Logo.jpg');
 }
 
 .statementcontainer .statement{
@@ -560,7 +547,7 @@ a{
 
 }
 
-a:hover {
+a:hover, a p:hover{
     color:var(--TEXT-HOVER-COLOR);
 }
 
