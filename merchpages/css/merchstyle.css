@@ -11,7 +11,7 @@
     font-family: Helvetica Ultracondensed;
     font-style: normal;
     font-weight: normal;
-    src: url('/css/fonts/HelveticaUltraCompressed.otf');
+    src: url('../../css/fonts/HelveticaUltraCompressed.otf');
 }
 
 html {

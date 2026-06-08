@@ -2,7 +2,7 @@ const arrowLeft = document.getElementById('arrow-left');
 const arrowRight = document.getElementById('arrow-right');
 const merchImage = document.getElementsByClassName('merchimage');
 
-const images = ["/css/media/Like\ Water.jpg", "/merchpages/css/media/LikeWaterBack.png"];
+const images = ["../../css/media/Like\ Water.jpg", "../../merchpages/css/media/LikeWaterBack.png"];
 const photorow = document.querySelector('.photorow');
 
 for (i = 0; i<(images.length); i=i+1){
