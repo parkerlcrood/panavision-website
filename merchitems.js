@@ -9,25 +9,25 @@ let merchArray = [
         image : "url('css/media/Like\ Water.jpg')",
         text: 'Like Water - CD',
         buttontext : 'Buy Now',
-        pageurl : '/merchpages/LWCD/LWCD.html'
+        pageurl : '/panavision-website/merchpages/LWCD/LWCD.html'
     },
     {
         image : "url('css/media/Like\ Water.jpg')",
         text: 'Pana-vision Keychain',
         buttontext : 'Buy Now',
-        pageurl : '/merchpages/LWGKCD/LWGKCD.html'
+        pageurl : '/panavision-website/merchpages/LWGKCD/LWGKCD.html'
     },
     {
         image : "url('css/media/Like\ Water.jpg')",
         text: 'Pana-vision -"Pretty Houses 1" T Shirt',
         buttontext : 'Buy Now',
-        pageurl : '/merchpages/LWGKCD/LWGKCD.html'
+        pageurl : '/panavision-website/merchpages/LWGKCD/LWGKCD.html'
     },
     {
         image : "url('css/media/Like\ Water.jpg')",
         text: 'Brother i cant believe i got this working',
         buttontext : 'Buy Now',
-        pageurl : '/merchpages/LWGKCD/LWGKCD.html'
+        pageurl : '/panavision-website/merchpages/LWGKCD/LWGKCD.html'
     }
 ];
 
