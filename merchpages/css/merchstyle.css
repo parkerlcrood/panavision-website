@@ -1,5 +1,5 @@
 /* 
-/* Reset */ */
+/* Reset */
 
 * {
     box-sizing: border-box;
@@ -103,10 +103,7 @@ html {
 
 #banner{
     background-color: black;
-    left: 0;
-    position: relative;
-    top: 0; 
-    width: 100%;
+    width: 100vw;
 }
 
 .footerbox{
@@ -145,7 +142,6 @@ html {
     margin-bottom: 0;
     margin-top: 0;
     padding-bottom: 1rem;
-    margin-left: 0;
     padding-left: .5rem;
     background-color: black;
 
@@ -233,8 +229,8 @@ html {
     display: flex;
     font-size: clamp(20px, 2vw, 50px);
     padding: .5rem;
-    margin-top: 0;
     background-color: black;
+    width: 100vw;
 }
 
 /* End Flexboxes*/
@@ -315,7 +311,6 @@ html {
     display: flex;
     justify-content: center;
     margin-bottom: 2vw;
-    margin-left: 10%;
     margin-right: 10%;
     text-shadow: var(--S-TEXT-SHADOW);
     white-space: wrap;
@@ -359,7 +354,11 @@ a{
 
 }
 
-a:hover {
+a{
+    color:var(--TEXT-COLOR);
+}
+
+a:hover, a p:hover{
     color:var(--TEXT-HOVER-COLOR);
 }
 
