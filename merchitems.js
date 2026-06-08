@@ -1,30 +1,30 @@
 let merchArray = [
     {
-        image : "url('/css/media/Like\ Water\ Alt.jpeg')",
+        image : "url('./css/media/Like\ Water\ Alt.jpeg')",
         text: 'Like Water (Getting Killed Edition) - CD',
         buttontext : 'Buy Now',
         pageurl : '/panavision-website/merchpages/LWGKCD/LWGKCD.html'
     },          
     {
-        image : "url('/css/media/Like\ Water.jpg')",
+        image : "url('./css/media/Like\ Water.jpg')",
         text: 'Like Water - CD',
         buttontext : 'Buy Now',
         pageurl : '/panavision-website/merchpages/LWCD/LWCD.html'
     },
     {
-        image : "url('/css/media/Like\ Water.jpg')",
+        image : "url('./css/media/bigboytv.png')",
         text: 'Pana-vision Keychain',
         buttontext : 'Buy Now',
         pageurl : '/panavision-website/merchpages/LWGKCD/LWGKCD.html'
     },
     {
-        image : "url('/css/media/Like\ Water.jpg')",
+        image : "url('./css/media/I\ touched\ the\ moss\ single\ cover.jpg')",
         text: 'Pana-vision -"Pretty Houses 1" T Shirt',
         buttontext : 'Buy Now',
         pageurl : '/panavision-website/merchpages/LWGKCD/LWGKCD.html'
     },
     {
-        image : "url('/css/media/Like\ Water.jpg')",
+        image : "url('./css/media/benthic.png')",
         text: 'Brother i cant believe i got this working',
         buttontext : 'Buy Now',
         pageurl : '/panavision-website/merchpages/LWGKCD/LWGKCD.html'
