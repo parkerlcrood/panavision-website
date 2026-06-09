@@ -581,10 +581,13 @@ body {
 
     #banner.open{
         height: 100%;
+        position: fixed;
+        animation: openMenu .2s ease-in-out forwards;
     }
     
     #bannernav{
         display : none;
+        animation: openMenu .1s ease-in-out forwards;
     }
 
     #menubuttoncontainer{
@@ -650,7 +653,6 @@ body {
     #bannerlinks {
         list-style-type: none;
         display: none;
-        animation: showMenu 0.5s ease-in-out forwards;
     }
 
     #bannerlinks.open {
@@ -895,3 +897,12 @@ body {
 
 
 /*  Animations  */
+
+@keyframes openMenu {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
