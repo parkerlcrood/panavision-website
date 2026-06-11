@@ -80,7 +80,7 @@ html {
     position: fixed;
     height: 100vh;
     width: 100vw;
-    animation: showModal .15s ease-in-out forwards
+    animation: showModal .15s ease-in;
 }
 
 #modal img{
@@ -709,14 +709,5 @@ header{
     }
     100% {
         opacity: 1;
-    }
-}
-
-@keyframes closeModal {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
     }
 }

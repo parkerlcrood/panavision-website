@@ -582,12 +582,12 @@ body {
     #banner.open{
         height: 100%;
         position: fixed;
-        animation: openMenu .2s ease-in-out forwards;
+        animation: openMenu .2s ease-in-out forwards .2s;
     }
     
     #bannernav{
         display : none;
-        animation: openMenu .1s ease-in-out forwards;
+        animation: openMenu .1s ease-in-out forwards .2s;
     }
 
     #menubuttoncontainer{

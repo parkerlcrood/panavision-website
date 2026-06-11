@@ -1,7 +1,5 @@
 const menuButton = document.getElementById("menubutton");
 
-let menuOpen = false;
-
 menuButton.addEventListener("click", () => openMenu());
 
 function openMenu(){

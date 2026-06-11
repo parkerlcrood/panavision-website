@@ -1,61 +1,45 @@
-let merchArray = [
-    {
-        image : "url('./css/media/Like\ Water\ Alt.jpeg')",
-        text: 'Like Water (Getting Killed Edition) - CD',
-        buttontext : 'Buy Now',
-        pageurl : '/panavision-website/merchpages/LWGKCD/LWGKCD.html'
-    },          
-    {
-        image : "url('./css/media/Like\ Water.jpg')",
-        text: 'Like Water - CD',
-        buttontext : 'Buy Now',
-        pageurl : '/panavision-website/merchpages/LWCD/LWCD.html'
-    },
-    {
-        image : "url('./css/media/bigboytv.png')",
-        text: 'Pana-vision Keychain',
-        buttontext : 'Buy Now',
-        pageurl : '/panavision-website/merchpages/LWGKCD/LWGKCD.html'
-    },
-    {
-        image : "url('./css/media/I\ touched\ the\ moss\ single\ cover.jpg')",
-        text: 'Pana-vision -"Pretty Houses 1" T Shirt',
-        buttontext : 'Buy Now',
-        pageurl : '/panavision-website/merchpages/LWGKCD/LWGKCD.html'
-    },
-    {
-        image : "url('./css/media/benthic.png')",
-        text: 'Brother i cant believe i got this working',
-        buttontext : 'Buy Now',
-        pageurl : '/panavision-website/merchpages/LWGKCD/LWGKCD.html'
+async function getMerch() {
+    try{
+        const response = await fetch("./JSON/merchtable.json");
+
+        if (!response.ok) {
+            throw new Error("Could not fetch");
+        }
+
+        const merchArray = await response.json(); 
+        merchTable = document.getElementsByClassName('merchtable')[0];
+
+        for (i = 0; i < (merchArray.length); i = i + 1){
+            merchitem = document.createElement('div');
+            merchphoto = document.createElement('div');
+            merchlink = document.createElement('a');
+            merchlink.href = merchArray[i].pageurl;
+            merchtext = document.createElement('p');
+            merchtext.innerText = merchArray[i].text;
+            merchtext.classList.add('merchtext');
+            merchlink.appendChild(merchtext);
+            v = document.createElement('div');
+            w = document.createElement('a');
+            w.href = "/message.html"
+            button = document.createElement('button');
+            button.innerText = 'Buy Now';
+            w.appendChild(button);
+            v.appendChild(w);
+            merchitem.appendChild(merchphoto);
+            merchitem.appendChild(merchlink);
+            merchitem.appendChild(v);
+            merchlink.classList.add('merchlink');
+            merchphoto.classList.add('merchphoto');
+            merchitem.classList.add('merchitem');
+            merchphoto.style.backgroundImage = merchArray[i].image;
+            merchTable.appendChild(merchitem);
+        }
     }
-];
 
-merchTable = document.getElementsByClassName('merchtable')[0];
+    catch(error){
+        console.error(error);
+    }
 
-for (i = 0; i < (merchArray.length); i = i + 1){
-
-    x = document.createElement('div');
-    y = document.createElement('div');
-    z = document.createElement('a');
-    z.href = merchArray[i].pageurl;
-    t = document.createElement('p');
-    t.innerText = merchArray[i].text;
-    t.classList.add('merchtext');
-    z.appendChild(t);
-    v = document.createElement('div');
-    w = document.createElement('a');
-    w.href = "/message.html"
-    b = document.createElement('button');
-    b.innerText = 'Buy Now';
-    w.appendChild(b);
-    v.appendChild(w);
-    x.appendChild(y);
-    x.appendChild(z);
-    x.appendChild(v);
-    z.classList.add('merchlink');
-    y.classList.add('merchphoto');
-    x.classList.add('merchitem');
-    y.style.backgroundImage = merchArray[i].image;
-    merchTable.appendChild(x)
 }
+
+getMerch();
