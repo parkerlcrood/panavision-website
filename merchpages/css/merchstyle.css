@@ -384,10 +384,12 @@ header{
         flex-flow: column;
         transform-origin: top center;
         height: 100%;
+        animation: openMenu .2s ease-in-out forwards;
     }
     
     #bannernav{
         display : none;
+        animation: openMenu .2s ease-in-out forwards;
     }
 
     #banner{
@@ -513,9 +515,7 @@ header{
         padding-bottom: 0;
         margin-top: .1rem;
         margin-left: .1rem;
-}
-
-
+    }
 
     .footerbox{
         width: 100%;
@@ -708,5 +708,14 @@ header{
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes openMenu {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
     }
 }

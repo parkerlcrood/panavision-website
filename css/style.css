@@ -615,14 +615,16 @@ body {
 @media screen and (max-width:770px){
 
     #banner.open{
+        display: flex;
+        flex-flow: column;
+        transform-origin: top center;
         height: 100%;
-        position: fixed;
-        animation: openMenu .2s ease-in-out forwards .2s;
+        animation: openMenu .2s ease-in-out forwards;
     }
     
     #bannernav{
         display : none;
-        animation: openMenu .1s ease-in-out forwards .2s;
+        animation: openMenu .2s ease-in-out forwards;
     }
 
     #menubuttoncontainer{
