@@ -41,6 +41,21 @@
             <article class="container">
                 <div class="cardtitle">
                     <h2>Merch</h2>
+                    <div class="filtersbar">
+                    <label class="title" for="merchsearch"><p>Search Items:</p></label>
+                    <span class="filters">
+                        <input type="search" class="merchsearch" name="merchsearch">
+                    </span>
+                    <label class="title" for='sortbar'><p>Sort:</p></label>
+                    <span class="filters" for="sortbar">
+                        <input list="sorting-options" onfocus="this.value=''" onchange="this.blur();" class="sortbar" name="sortbar">
+                        <datalist id="sorting-options">
+                            <option value="Funny Factor (Low to High)"></option>
+                            <option value="Alphabetical (A-Z)"></option>
+                        </datalist>
+                        
+                    </span>
+                    </div>
                 </div>
                 <section class="merchtable">
                     <!-- <div class="merchitem">

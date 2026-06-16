@@ -15,6 +15,5 @@ function showmodal(){
 }
 
 function closemodal(){
-    console.log('removed');
     modal.parentNode.removeChild(modal);
 }
