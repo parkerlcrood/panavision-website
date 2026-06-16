@@ -1,37 +1,42 @@
 [
     {
-        "image" : "url('../css/media/Like Water Alt.jpeg')",
+        "image" : "url('css/media/Like Water Alt.jpeg')",
         "text": "Like Water (Getting Killed Edition) - CD",
         "buttontext" : "Buy Now",
         "pageurl" : "merchpages/LWGKCD.html",
-        "funny" : "10"
+        "funny" : "10",
+        "price" : "7"
     },          
     {
-        "image" : "url('../css/media/Like Water.jpg')",
+        "image" : "url('css/media/Like Water.jpg')",
         "text": "Like Water - CD",
         "buttontext" : "Buy Now",
         "pageurl" : "merchpages/LWCD.html",
-        "funny" : "7"
+        "funny" : "7",
+        "price" : "7"
     },
     {
-        "image" : "url('../css/media/bigboytv.png')",
+        "image" : "url('css/media/bigboytv.png')",
         "text": "Pana-vision Keychain",
         "buttontext" : "Buy Now",
         "pageurl" : "merchpages/LWGKCD.html",
-        "funny" : "1"
+        "funny" : "1",
+        "price" : "2"
     },
     {
-        "image" : "url('../css/media/I touched the moss single cover.jpg')",
-        "text": "Pana-vision -'Pretty Houses 1' T Shirt",
+        "image" : "url('css/media/I touched the moss single cover.jpg')",
+        "text": "Pana-vision -'Pretty Houses 1' T-Shirt",
         "buttontext" : "Buy Now",
         "pageurl" : "merchpages/LWGKCD.html",
-        "funny" : "4"
+        "funny" : "4",
+        "price" : "10"
     },
     {
-        "image" : "url('../css/media/benthic.png')",
+        "image" : "url('css/media/benthic.png')",
         "text": "Brother i cant believe i got this working",
         "buttontext" : "Buy Now",
         "pageurl" : "merchpages/LWGKCD.html",
-        "funny" : "0"
+        "funny" : "0",
+        "price" : "0"
     }
 ]

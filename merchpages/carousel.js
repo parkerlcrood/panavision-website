@@ -4,7 +4,7 @@ const merchImage = document.getElementsByClassName('merchimage');
 
 async function getMerchImages(){
 
-    const response = await fetch("../../../JSON/merchpage.json");
+    const response = await fetch("../JSON/merchpage.json");
 
     if (!response.ok){
         throw new Error("Unable to fetch");

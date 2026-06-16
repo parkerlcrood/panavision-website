@@ -46,8 +46,6 @@ async function getMerch() {
             });
         }
 
-        
-
         if (sortbar.value){
             switch (sortbar.value){
                 case 'Funny Factor (Low to High)':
@@ -62,6 +60,20 @@ async function getMerch() {
                         filteredArray = filteredArray.sort((a, b) => a.text.localeCompare(b.text));
                     } else {
                         filteredArray = merchArray.sort((a, b) => a.text.localeCompare(b.text));
+                    }
+                    break;
+                case 'Price (Low to High)':
+                    if (filteredArray.length>=1){
+                        filteredArray = filteredArray.sort((a, b) => a.price - b.price);
+                    } else {
+                        filteredArray = merchArray.sort((a, b) => a.price - b.price);
+                    }
+                    break;
+                case 'Price (High to Low)':
+                    if (filteredArray.length>=1){
+                        filteredArray = filteredArray.sort((a, b) => b.price - a.price);
+                    } else {
+                        filteredArray = merchArray.sort((a, b) => b.price - a.price);
                     }
                     break;
             }
