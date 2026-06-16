@@ -301,7 +301,7 @@ html {
 
 .filters {
     display: flex;
-    flex-flow: row-reverse nowrap;  
+    flex-flow: row-reverse wrap;  
     padding-bottom: .5vw;
 }
 
@@ -874,6 +874,7 @@ body {
         box-shadow: var(--PHOTO-SHADOW);
         width: 70%;
     }
+
 }
 
 @media screen and (min-width:557px) and (max-width: 647px){
@@ -888,6 +889,13 @@ body {
         box-shadow: var(--PHOTO-SHADOW);
         width: 70%;
     }
+
+    .filtersbar {
+        display: flex;
+        flex-flow: column;  
+        align-items: flex-start;
+        padding-bottom: .5vw;
+    }
 }
 
 @media screen and (max-width:429px){
@@ -900,6 +908,13 @@ body {
         width: 100%;
         aspect-ratio: 16 / 9;
         height: auto;
+    }
+
+    .filtersbar {
+        display: flex;
+        flex-flow: column;  
+        align-items: flex-start;
+        padding-bottom: .5vw;
     }
 }
 
@@ -925,6 +940,15 @@ body {
     .videoexplainer .explainer{
         max-width: 30ch;
     }
+}
+
+@media screen and (max-width:557px){
+    .filtersbar {
+            display: flex;
+            flex-flow: column;  
+            align-items: flex-start;
+            padding-bottom: .5vw;
+        }
 }
 
 /*End Responsive Layout*/
