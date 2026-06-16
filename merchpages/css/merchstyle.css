@@ -68,7 +68,6 @@ html {
     padding: 2rem;
     justify-content: space-around;
     align-items: flex-start;
-
 }
 
 #modal{
@@ -250,8 +249,8 @@ html {
     opacity: 75%;
 }
 
-#backtotop a:hover{
-    color: var(--TEXT-COLOR);
+.btmerch:hover{
+    color: var(--TEXT-HOVER-COLOR);
 }
 
 #backtotop a:any-link .statement{
