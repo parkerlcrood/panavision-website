@@ -1,17 +1,17 @@
 function makeArray(arrayIn, merchTable){
     for (i = 0; i < (arrayIn.length); i = i + 1){
-        merchitem = document.createElement('div');
-        merchphoto = document.createElement('div');
-        merchlink = document.createElement('a');
+        const merchitem = document.createElement('div');
+        const merchphoto = document.createElement('div');
+        const merchlink = document.createElement('a');
         merchlink.href = arrayIn[i].pageurl;
-        merchtext = document.createElement('p');
+        const merchtext = document.createElement('p');
         merchtext.innerText = arrayIn[i].text;
         merchtext.classList.add('merchtext');
         merchlink.appendChild(merchtext);
-        v = document.createElement('div');
-        w = document.createElement('a');
+        const v = document.createElement('div');
+        const w = document.createElement('a');
         w.href = "/message.html"
-        button = document.createElement('button');
+        const button = document.createElement('button');
         button.innerText = 'Add to Cart';
         w.appendChild(button);
         v.appendChild(w);
@@ -33,9 +33,6 @@ async function getMerch() {
     try{
 
         const response = await fetch("./JSON/merchtable.json");
-        let filtersearch = document.querySelector('.merchsearch');
-        let sortbar = document.querySelector('.sortbar');
-        let sortlist = document.querySelector('#sorting-options');
 
         if (!response.ok) {
             throw new Error("Could not fetch");
@@ -78,9 +75,6 @@ async function getMerch() {
         } else {
             makeArray(merchArray, merchTable);
         }
-
-        filtersearch.addEventListener('keydown', getMerch);
-        sortValue = sortbar.addEventListener('input', getMerch);
     }
 
     catch(error){
@@ -88,5 +82,11 @@ async function getMerch() {
     }
 
 }
+
+const filtersearch = document.querySelector('.merchsearch');
+const sortbar = document.querySelector('.sortbar');
+
+filtersearch.addEventListener('keydown', getMerch);
+sortbar.addEventListener('input', getMerch);
 
 getMerch();
