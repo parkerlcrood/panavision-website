@@ -123,7 +123,8 @@ html {
     color: var(--TEXT-COLOR);
     font-size: clamp(20px, 3.5vw, 80px);
     gap: 3vw;
-    margin-left: 1vw;
+    padding: 1vw;
+    
 }
 
 .logocontainer{
@@ -224,8 +225,6 @@ html {
     height: clamp(2rem, 4vw, 7rem);
 }
 
-
-
 .btmerch{
     display: flex;
     font-size: clamp(20px, 2vw, 50px);
@@ -316,8 +315,6 @@ html {
     text-shadow: var(--S-TEXT-SHADOW);
     white-space: wrap;
 }
-
-
 
 /* End Element Elements */
 

@@ -219,32 +219,31 @@ html {
 .footerbox{
     width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
     justify-content: space-between;
-    box-shadow: var(--BANNER-SHADOW);
+    border-top: 1px solid var(--TEXT-COLOR);
 }
 
 .lower{
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     align-items: center;
     color: var(--TEXT-COLOR);
     font-size: clamp(20px, 3.5vw, 80px);
     gap: 3vw;
-    text-shadow: var(--S-TEXT-SHADOW);
-    margin-left: 1vw;
+    margin: 0;
+    padding: 1vw;
 }
 
 .logocontainer{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: .5vw;
+    justify-content: center;
+    margin: 0;
+    padding: 1vw;
 }
-
-
 
 #bannerlinks{
     margin-left: .6vw;
@@ -401,8 +400,9 @@ html {
 }
 
 .logo{
-    width:clamp(20px, 3vw, 100px);
+    width:clamp(50px, 5vw, 100px);
     aspect-ratio: 1 / 1;
+    margin-right: 2rem;
     z-index: 1000;
 }
 
@@ -549,6 +549,7 @@ html {
 footer{
     width:100%;
     background-color: black;
+    position: relative;
 }
 
 /* End Element Elements */
@@ -752,20 +753,23 @@ body {
     }
 
     .logo{
-        width:clamp(100px,10vw,50px);
+        width:clamp(100px, 50%, 500px);
+        justify-self: center;
+        align-self: center;
         aspect-ratio: 1 / 1;
+        height:auto;
         z-index: 1000;
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 0;
     }
 
     .logocontainer{
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin:0;
-        padding:0;
+        flex-direction: column;
         width:50%;
-        border-top: .1vw solid var(--TEXT-COLOR);
+        height:100%;
+        padding: 0;
     }
 
     
