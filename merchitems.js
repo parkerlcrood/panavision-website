@@ -1,19 +1,25 @@
+
 function makeArray(arrayIn, merchTable){
-    for (i = 0; i < (arrayIn.length); i = i + 1){
+
+    for (let i = 0; i < (arrayIn.length); i = i + 1){
         const merchitem = document.createElement('div');
         const merchphoto = document.createElement('div');
         const merchlink = document.createElement('a');
-        merchlink.href = arrayIn[i].pageurl;
+        const merchEl = arrayIn[i];
+        merchlink.href = merchEl.pageurl;
         const merchtext = document.createElement('p');
-        merchtext.innerText = arrayIn[i].text;
+        merchtext.innerText = merchEl.text;
         merchtext.classList.add('merchtext');
         merchlink.appendChild(merchtext);
         const v = document.createElement('div');
-        const w = document.createElement('a');
-        w.href = "/message.html"
+        const w = document.createElement('div');
         const button = document.createElement('button');
         button.innerText = 'Add to Cart';
         w.appendChild(button);
+        button.addEventListener('click', () => {
+            cartArray.push(merchEl.text);
+            localStorage.setItem('shoppingCart', JSON.stringify(cartArray));
+        });
         v.appendChild(w);
         merchitem.appendChild(merchphoto);
         merchitem.appendChild(merchlink);
@@ -21,7 +27,7 @@ function makeArray(arrayIn, merchTable){
         merchlink.classList.add('merchlink');
         merchphoto.classList.add('merchphoto');
         merchitem.classList.add('merchitem');
-        merchphoto.style.backgroundImage = arrayIn[i].image;
+        merchphoto.style.backgroundImage = merchEl.image;
         merchTable.appendChild(merchitem);
     }
 }
@@ -93,6 +99,10 @@ async function getMerch() {
         console.error(error);
     }
 
+}
+
+async function addToCart(cartArr, itemIn){
+    
 }
 
 const filtersearch = document.querySelector('.merchsearch');

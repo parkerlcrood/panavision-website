@@ -1,0 +1,33 @@
+{
+  "name": "panavision-website",
+  "version": "1.0.0",
+  "description": "Using bootstrap in service of the website for Pana-vision",
+  "keywords": [
+    "bootstrap",
+    "Bootstrap",
+    "pana-vision",
+    "panavision",
+    "website"
+  ],
+  "homepage": "https://github.com/parkerlcrood/panavision-website#readme",
+  "bugs": {
+    "url": "https://github.com/parkerlcrood/panavision-website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/parkerlcrood/panavision-website.git"
+  },
+  "license": "ISC",
+  "author": "Parker Reed",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "sass": "^1.101.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
